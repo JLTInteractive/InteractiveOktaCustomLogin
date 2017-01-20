@@ -1,0 +1,474 @@
+// Header
+// prefix .h-
+
+.h-box {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background: $pure-white;
+  border-bottom: 1px solid $neutral-highlight-grey;
+}
+
+.h-header__box {
+  background: center $pure-black url("../images/background-header-home.jpg") no-repeat;
+  background-size: cover;
+  color: $pure-white;
+  min-height: 60vw;
+
+  a {
+    color: $pure-white;
+  }
+}
+
+.h-strapline {
+  margin: 1em 0 0;
+  font: 48px $open-sans-bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.h-intro {
+  margin: 1em auto 2.5em;
+  max-width: 40em;
+  font-size: 18px;
+  line-height: 2em;
+  text-align: center;
+}
+
+.h-status {
+  width: 100%;
+  padding: 0 20px;
+  color: $pure-white;
+  background: $neutral-dim-grey;
+
+  @media screen and (min-width: $break-doppio) {
+    padding: 0 55px;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  a {
+    line-height: 1.4;
+    text-decoration: none;
+  }
+
+  a,
+  a:link {
+    color: $neutral-light-grey;
+  }
+
+  a:active,
+  a:focus,
+  a:hover {
+    color: $pure-white;
+  }
+}
+
+.h-status__title {
+  padding-right: 10px;
+}
+
+.h-status__liner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.h-status__icon {
+  font-size: 10px;
+  text-align: center;
+
+  svg {
+    margin-left: 0.5em;
+    vertical-align: text-top;
+    fill: currentColor;
+  }
+}
+
+.h-status__nav {
+  flex-grow: 1;
+  margin: 7px 0 0;
+  font-size: 14px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (min-width: $break-doppio) {
+    text-align: right;
+  }
+
+  li {
+    margin: 0 0 7px;
+  }
+
+  a {
+    display: inline-block;
+    margin-right: 4px;
+    padding: 12px 10px;
+    border: 1px solid $neutral-light-grey;
+    color: $neutral-light-grey;
+    //todo: transition
+    transition: color 200ms ease-in-out, border 200ms ease-in-out, background 200ms ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $neutral-mid-text-grey;
+      color: $pure-white;
+      border: 1px solid $pure-white;
+      text-decoration: none;
+    }
+
+    &.h-status__icon {
+      padding: 5px 10px;
+    }
+  }
+}
+
+.h-status__form {
+  font-size: 12px;
+  margin: 0 4px 0 0;
+
+  input[type="text"],
+  input[type="search"] {
+    line-height: 1.5;
+    height: 2.167em;
+    padding: 3px 6px;
+    background: $neutral-mid-text-grey;
+    border: 1px solid $neutral-light-grey;
+    color: $pure-white;
+
+    &:focus,
+    &:hover {
+      border-color: $pure-white;
+    }
+  }
+
+  input[type="submit"] {
+    margin-left: 0;
+    padding: 6px 13px;
+    line-height: 1;
+    background: $neutral-dim-grey;
+    border-color: $neutral-light-grey;
+    border-left: 0;
+
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: $neutral-mid-text-grey;
+      border-color: $pure-white;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    input {
+      border-color: $pure-white;
+    }
+  }
+}
+
+.h-status__button-search {
+  text-indent: -999em;
+  background: $neutral-dim-grey;
+}
+
+.h-label__svg {
+  position: relative;
+  display: inline-block;
+
+  svg {
+    position: absolute;
+    z-index: 1;
+    top: 3px;
+    left: 3px;
+    fill: $neutral-light-grey;
+    stroke: $neutral-light-grey;
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    svg {
+      fill: $pure-white;
+      stroke: $pure-white;
+    }
+  }
+}
+
+.header-branding {
+  margin: 0 20px;
+  padding: 15px 24px 20px 0;
+
+  @media screen and (min-width: $break-doppio) {
+    margin: 0 55px;
+  }
+
+  h1 {
+    margin: 0;
+    line-height: 1;
+  }
+}
+
+.header-brand {
+  display: inline-block;
+  height: 50px;
+  width: 136px;
+  text-indent: -999em;
+  background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20baseProfile%3D%22tiny%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22191%22%20height%3D%2272%22%20viewBox%3D%220%200%20191%2072%22%3E%3Cpath%20fill%3D%22%230C2340%22%20d%3D%22M112.5%2056.8v-3.2h4.6c1%200%201.8-.8%201.8-1.7V12.4c0-1-.8-1.7-1.8-1.7h-4.6v-3h21.6v3h-4.6c-1%200-1.8.8-1.8%201.7v39.5c0%201%20.8%201.7%201.8%201.7h11.1c4%200%205.7-2.4%208.3-8.2l2.4.5-3.3%2010.9h-35.5zm64-46.2c6.4%200%208.4%201%2011.1%206.9h2.5l-2.6-9.9h-44.2l-2.6%209.9h2.5c2.7-5.9%204.7-6.8%2011.1-6.9h5c1%200%201.7.8%201.7%201.7v39.6c0%201-.8%201.7-1.7%201.7h-5.1v3.1h22.4v-3.1h-5.1c-1%200-1.7-.8-1.7-1.7V12.3c0-1%20.8-1.7%201.7-1.7h5zM82.2%2071c7.5-.1%2013.7-4.5%2016.3-10.7%201.4-3.3%201.6-8.2%201.6-14.1V12.4c0-.9.8-1.7%201.7-1.7h4.6v-3L85%207.6v3h4.6c1%200%201.7.8%201.7%201.7v34C91.4%2059%2091%2066.5%2088%2066.9c-2.8.3-4.1-2.6-7.3-2.6-1.9%200-3.4%201.5-3.4%203.1%200%201.9%201.6%203.6%204.9%203.6%22%2F%3E%3Cpath%20fill%3D%22%23BF0D3E%22%20d%3D%22M32.5%2025.1c17.3.1%2030.9%2012.7%2032.9%2028.9%200%200-.6%201.1-.8%201.4-.2.3-.9%201.4-.9%201.4-4.7-13.5-18.1-24-34.1-24-1.6%200-3.7.1-5.3.3l8.2-8zM57.7%201.2c-.1-.1-.3-.2-.5-.2s-.4.1-.5.2L38.2%2019.4c15.9%201.8%2027.6%2013.5%2029.7%2029v-.1C77.2%2022.4%2061%204.4%2057.7%201.2zm1.9%2060.7c.1.1.1.1.2.1s.2%200%20.2-.1c.2-.3.5-.6.7-.9.4-.6%201-1.2%201-1.2-7.2-12-19.4-20-36.1-20-2.7%200-6.3.4-9.1%201.1L1%2056.4s-.1.1-.1.2.1.2.2.2h.1l.9-.6c7.2-5%2016-8%2025.4-8%2012.5%200%2023.8%205.1%2031.8%2013.4l.3.3z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+  background-size: contain;
+}
+
+.h-header__form {
+  border: 1px solid $pure-white;
+  border-radius: 3px;
+  width: 25em;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 0.15);
+
+  input {
+    color: $pure-black;
+  }
+}
+
+.h-header__submit {
+  p {
+    margin-top: 0;
+  }
+
+  input {
+    color: $pure-white;
+    text-transform: uppercase;
+  }
+}
+
+.h-nav-main {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 196px);
+  margin: 0 20px 0 176px;
+  padding: 0;
+  font: 14px $open-sans-semibold;
+
+  @media screen and (min-width: $break-doppio) {
+    width: calc(100% - 266px);
+    margin: 0 55px 0 211px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: block;
+    min-height: 20px;
+    padding: 9px 15px 11px;
+    color: $jlt-blue;
+
+    &:hover,
+    &:active,
+    &:focus {
+      @include header-nav-main-active-state();
+    }
+  }
+}
+
+// Drop menu
+
+.g-drop-menu__list {
+  display: none;
+  position: absolute;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: $pure-white;
+  z-index: 10;
+
+  &[aria-hidden="false"] {
+    display: block;
+  }
+
+  li {
+    display: block;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap;
+
+    a {
+      padding: 4px 16px;
+      font-size: 13px;
+    }
+
+    a,
+    a:link,
+    a:visited {
+      border: 0;
+      color: $jlt-blue;
+      display: block;
+      margin: 0;
+    }
+
+    a:focus,
+    a:active {
+      background-color: $pure-white;
+    }
+
+    a:hover,
+    &[aria-selected="true"] a,
+    a[aria-expanded="true"] {
+      border: 0;
+      color: $pure-white;
+      background-color: $neutral-mid-text-grey;
+    }
+  }
+}
+
+.g-drop-menu__action {
+  .g-drop-menu__list & {
+    padding-right: calc(1.25em + 4px);
+  }
+
+  &[aria-selected="true"] {
+    background-color: $neutral-highlight-grey;
+  }
+
+  &::after {
+    content: "\25bc";
+    margin-left: 0.25em;
+
+    .g-drop-menu__list & {
+      position: absolute;
+      right: 4px;
+      transform: rotate(270deg);
+    }
+
+    .overflow-nav__list & {
+      content: "";
+      margin-left: 0;
+    }
+  }
+}
+
+/*
+No-flex
+
+Support for non-flexbox browsers. Remove this once IE9 support is no longer required.
+
+Minimum width fixed to 900px to make things easier
+*/
+
+//.flexbox {
+.no-flexbox {
+  //header .h-
+  .header-box {
+    display: block;//temp
+    position: relative;
+    padding-top: 65px;
+  }
+
+  .h-status {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .h-status__liner {
+    display: block;
+  }
+
+  .h-status__nav {
+    position: absolute;
+    right: 55px;
+    top: 0;
+  }
+}
+
+/*
+No-SVG
+
+Support for non-svg browsers. Essentially means PNG replacements.
+
+Remove when IE8 support is no longer required
+*/
+.no-svg {
+  .header-brand {
+    background-image: url("../images/logo_jlt.png");
+  }
+
+  .h-status__nav a.h-status__icon {
+    padding-top: 25px;
+    background-position: center 5px;
+    background-repeat: no-repeat;
+  }
+
+  .h-status__icon--profile {
+    background-image: url("../images/icon_profile.png");
+  }
+
+  .h-status__icon--list {
+    background-image: url("../images/icon_list.png");
+  }
+}
+
+/*
+No-MediaQueries
+
+Support for non-media query browsers.
+
+Remove when IE8 support is no longer required
+*/
+.no-mediaqueries {
+  .h-status {
+    padding: 10px 55px;
+  }
+
+  .h-status__nav {
+    text-align: right;
+  }
+
+  .header-branding {
+    margin: 0 55px;
+    padding: 25px 24px 30px 0;
+  }
+
+  .h-nav-main {
+    width: calc(100% - 266px);
+    margin: 0 55px 0 211px;
+    min-height: 105px;
+
+    a {
+      padding: 42px 15px 43px;
+    }
+  }
+}
+
+
+/*
+No-CSSCalc
+
+Support for non-calc browsers.
+
+Remove when IE8 support is no longer required
+*/
+.no-csscalc {
+  .header-branding {
+    margin: 0 3%;
+  }
+
+  .h-status {
+    padding: 0 3%;
+    width: 94%;
+  }
+
+  .h-nav-main {
+    margin: 0 3%;
+  }
+}

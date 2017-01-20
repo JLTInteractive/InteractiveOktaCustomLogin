@@ -1,0 +1,38 @@
+.g-accordion__header {
+  border: 1px solid;
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  text-align: left;
+  font-size: 20px;
+  touch-action: manipulation;
+
+  &:before {
+    content: "\2212";
+    margin-right: 0.5em;
+  }
+
+  &[aria-expanded="true"]:before {
+    content: "+";
+  }
+
+  &:focus {
+    background: $neutral-highlight-grey;
+  }
+}
+
+.g-accordion__panel {
+  transition: max-height 0.5s ease-in-out;
+  border: 1px solid;
+  margin-bottom: 1rem;
+  //shouldn't set the unit if the value is 0 but IE won't animate back without it.
+  max-height: 0;
+  border-top: 0;
+  overflow: hidden;
+  will-change: max-height;
+}
+
+.g-accordion__panel--expanded {
+  border-top: 1px solid;
+  max-height: 250vh;
+}

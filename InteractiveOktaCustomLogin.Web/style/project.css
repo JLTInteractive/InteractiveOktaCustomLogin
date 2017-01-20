@@ -1,0 +1,3712 @@
+/*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+/* line 8, ../lib/juis/sass/lib/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 18, ../lib/juis/sass/lib/normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+/* line 31, ../lib/juis/sass/lib/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 50, ../lib/juis/sass/lib/normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 61, ../lib/juis/sass/lib/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 70, ../lib/juis/sass/lib/normalize.scss */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+/* line 79, ../lib/juis/sass/lib/normalize.scss */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 91, ../lib/juis/sass/lib/normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 100, ../lib/juis/sass/lib/normalize.scss */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 113, ../lib/juis/sass/lib/normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 123, ../lib/juis/sass/lib/normalize.scss */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 132, ../lib/juis/sass/lib/normalize.scss */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 141, ../lib/juis/sass/lib/normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 150, ../lib/juis/sass/lib/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 159, ../lib/juis/sass/lib/normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 168, ../lib/juis/sass/lib/normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 177, ../lib/juis/sass/lib/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 185, ../lib/juis/sass/lib/normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 189, ../lib/juis/sass/lib/normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 200, ../lib/juis/sass/lib/normalize.scss */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 208, ../lib/juis/sass/lib/normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 220, ../lib/juis/sass/lib/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 232, ../lib/juis/sass/lib/normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 241, ../lib/juis/sass/lib/normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Change font properties to `inherit` in all browsers (opinionated).
+ */
+/* line 254, ../lib/juis/sass/lib/normalize.scss */
+button,
+input,
+select,
+textarea {
+  font: inherit; }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+/* line 265, ../lib/juis/sass/lib/normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ * 2. Show the overflow in Edge, Firefox, and IE.
+ */
+/* line 275, ../lib/juis/sass/lib/normalize.scss */
+button,
+input,
+select {
+  /* 2 */
+  overflow: visible; }
+
+/**
+ * Remove the margin in Safari.
+ * 1. Remove the margin in Firefox and Safari.
+ */
+/* line 286, ../lib/juis/sass/lib/normalize.scss */
+button,
+input,
+select,
+textarea {
+  /* 1 */
+  margin: 0; }
+
+/**
+ * Remove the inheritence of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritence of text transform in Firefox.
+ */
+/* line 298, ../lib/juis/sass/lib/normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Change the cursor in all browsers (opinionated).
+ */
+/* line 307, ../lib/juis/sass/lib/normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer; }
+
+/**
+ * Restore the default cursor to disabled elements unset by the previous rule.
+ */
+/* line 318, ../lib/juis/sass/lib/normalize.scss */
+[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS.
+ */
+/* line 328, ../lib/juis/sass/lib/normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 339, ../lib/juis/sass/lib/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 349, ../lib/juis/sass/lib/normalize.scss */
+button:-moz-focusring,
+input:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 358, ../lib/juis/sass/lib/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 371, ../lib/juis/sass/lib/normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 384, ../lib/juis/sass/lib/normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 393, ../lib/juis/sass/lib/normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 403, ../lib/juis/sass/lib/normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * Correct the odd appearance of search inputs in Chrome and Safari.
+ */
+/* line 412, ../lib/juis/sass/lib/normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield; }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome on OS X and
+ * Safari on OS X.
+ */
+/* line 421, ../lib/juis/sass/lib/normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* Open Sans Light */
+@font-face {
+  font-family: "OpenSans-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensans-light.woff2") format("woff2"), url("../fonts/opensans-light.woff") format("woff"), url("../fonts/opensans-light.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+/* Open Sans Regular */
+@font-face {
+  font-family: "OpenSans-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url("../fonts/opensans-regular.woff2") format("woff2"), url("../fonts/opensans-regular.woff") format("woff"), url("../fonts/opensans-regular.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+/* Open Sans Semi-Bold */
+@font-face {
+  font-family: "OpenSans-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url("../fonts/opensans-semibold.woff2") format("woff2"), url("../fonts/opensans-semibold.woff") format("woff"), url("../fonts/opensans-semibold.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+/* Open Sans Bold */
+@font-face {
+  font-family: "OpenSans-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensans-bold.woff2") format("woff2"), url("../fonts/opensans-bold.woff") format("woff"), url("../fonts/opensans-bold.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+/* line 5, ../lib/juis/sass/core/base-1.0.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* line 15, ../lib/juis/sass/core/base-1.0.scss */
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 0;
+  font-family: "OpenSans-Regular", "Helvetica Neue", Helvetica, tahoma, geneva, arial, sans-serif; }
+
+/* line 23, ../lib/juis/sass/core/base-1.0.scss */
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
+/* line 27, ../lib/juis/sass/core/base-1.0.scss */
+header,
+footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+/* line 32, ../lib/juis/sass/core/base-1.0.scss */
+label {
+  display: block; }
+
+/* line 36, ../lib/juis/sass/core/base-1.0.scss */
+input[type="checkbox"] {
+  cursor: pointer; }
+
+/*
+No-flex
+
+Support for non-flexbox browsers. Remove this once IE9 support is no longer required.
+
+Minimum width fixed to 900px to make things easier
+*/
+/* line 50, ../lib/juis/sass/core/base-1.0.scss */
+.no-flexbox body {
+  min-width: 900px;
+  background: #ebebeb; }
+
+/*
+Flexbox tweener
+
+Support for IE10's half-half flexbox implementation
+
+IE10 also flags .no-flexbox which means this essentially acts as an override where necessary.
+*/
+/* line 64, ../lib/juis/sass/core/base-1.0.scss */
+.flexboxtweener body {
+  background: none; }
+
+/* line 3, ../lib/juis/sass/core/grid-1.0.scss */
+.g-grid__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin: 0 -10px;
+  padding: 0; }
+
+/* line 11, ../lib/juis/sass/core/grid-1.0.scss */
+.g-grid__liner {
+  margin: 0 10px; }
+
+/* line 17, ../lib/juis/sass/core/grid-1.0.scss */
+.g-grid__two > .g-grid__item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+/* line 21, ../lib/juis/sass/core/grid-1.0.scss */
+.g-grid__two > .g-grid__item--full {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+
+/* line 28, ../lib/juis/sass/core/grid-1.0.scss */
+.g-grid__three > .g-grid__item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+/* line 32, ../lib/juis/sass/core/grid-1.0.scss */
+.g-grid__three > .g-grid__item--double,
+.g-grid__three > .g-grid__item--full {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+@media screen and (min-width: 480px) {
+  /* line 39, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__three > .g-grid__item {
+    -ms-flex-preferred-size: 33.3333%;
+        flex-basis: 33.3333%; }
+  /* line 43, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__three > .g-grid__item--double {
+    -ms-flex-preferred-size: 66.6666%;
+        flex-basis: 66.6666%; }
+  /* line 47, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__three > .g-grid__item--full {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
+
+/* line 55, ../lib/juis/sass/core/grid-1.0.scss */
+.g-grid__four > .g-grid__item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+/* line 59, ../lib/juis/sass/core/grid-1.0.scss */
+.g-grid__four > .g-grid__item--double,
+.g-grid__four > .g-grid__item--triple,
+.g-grid__four > .g-grid__item--full,
+.g-grid__four > .g-grid__item--last {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+@media screen and (min-width: 480px) {
+  /* line 68, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__four > .g-grid__item {
+    -ms-flex-preferred-size: 33.3333%;
+        flex-basis: 33.3333%; }
+  /* line 72, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__four > .g-grid__item--double {
+    -ms-flex-preferred-size: 66.6666%;
+        flex-basis: 66.6666%; }
+  /* line 76, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__four > .g-grid__item--triple,
+  .g-grid__four > .g-grid__item--full,
+  .g-grid__four > .g-grid__item--last {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
+@media screen and (min-width: 900px) {
+  /* line 84, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__four > .g-grid__item,
+  .g-grid__four > .g-grid__item--last {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+  /* line 89, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__four > .g-grid__item--double {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+  /* line 93, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__four > .g-grid__item--triple {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%; }
+  /* line 97, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__four > .g-grid__item--full {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
+
+/* line 105, ../lib/juis/sass/core/grid-1.0.scss */
+.g-grid__eight > .g-grid__item,
+.g-grid__eight > .g-grid__item--double {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+/* line 110, ../lib/juis/sass/core/grid-1.0.scss */
+.g-grid__eight > .g-grid__item--triple,
+.g-grid__eight > .g-grid__item--quad,
+.g-grid__eight > .g-grid__item--quint,
+.g-grid__eight > .g-grid__item--hex,
+.g-grid__eight > .g-grid__item--full,
+.g-grid__eight > .g-grid__item--last {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+@media screen and (min-width: 480px) {
+  /* line 121, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__eight > .g-grid__item {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+  /* line 125, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__eight > .g-grid__item--double {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+  /* line 129, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__eight > .g-grid__item--triple,
+  .g-grid__eight > .g-grid__item--quad,
+  .g-grid__eight > .g-grid__item--quint,
+  .g-grid__eight > .g-grid__item--hex,
+  .g-grid__eight > .g-grid__item--full,
+  .g-grid__eight > .g-grid__item--last {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
+@media screen and (min-width: 900px) {
+  /* line 140, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__eight > .g-grid__item,
+  .g-grid__eight > .g-grid__item--last {
+    -ms-flex-preferred-size: 12.5%;
+        flex-basis: 12.5%; }
+  /* line 145, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__eight > .g-grid__item--double {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+  /* line 149, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__eight > .g-grid__item--triple {
+    -ms-flex-preferred-size: 37.5%;
+        flex-basis: 37.5%; }
+  /* line 153, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__eight > .g-grid__item--quad {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+  /* line 157, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__eight > .g-grid__item--quint {
+    -ms-flex-preferred-size: 62.5%;
+        flex-basis: 62.5%; }
+  /* line 161, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__eight > .g-grid__item--hex {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%; }
+  /* line 165, ../lib/juis/sass/core/grid-1.0.scss */
+  .g-grid__eight > .g-grid__item--full {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
+
+/*
+No-flex
+Support for non-flexbox browsers. Remove this once IE10 support is no longer required.
+Minimum width fixed to 900px to make things easier
+*/
+/* line 177, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__box {
+  display: block;
+  list-style: none;
+  margin: 0 -10px;
+  padding: 0; }
+  /* line 13, ../lib/juis/sass/core/tools-1.0.scss */
+  .no-flexbox .g-grid__box::after {
+    content: "";
+    display: table;
+    clear: both; }
+/* line 185, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__item {
+  float: left; }
+/* line 190, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__item--first-in-row {
+  clear: left; }
+/* line 194, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__item--full {
+  clear: both; }
+/* line 199, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__two > .g-grid__item {
+  width: 50%; }
+/* line 203, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__two > .g-grid__item--full {
+  width: 100%; }
+/* line 209, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__three > .g-grid__item {
+  width: 33.3333%; }
+/* line 213, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__three > .g-grid__item--double {
+  width: 66.6666%; }
+/* line 217, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__three > .g-grid__item--full {
+  width: 100%; }
+/* line 223, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__four > .g-grid__item,
+.no-flexbox .g-grid__four > .g-grid__item--last {
+  width: 25%; }
+/* line 228, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__four > .g-grid__item--double {
+  width: 50%; }
+/* line 232, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__four > .g-grid__item--triple {
+  width: 75%; }
+/* line 236, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__four > .g-grid__item--full {
+  width: 100%; }
+/* line 242, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__eight > .g-grid__item,
+.no-flexbox .g-grid__eight > .g-grid__item--last {
+  width: 12.5%; }
+/* line 247, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__eight > .g-grid__item--double {
+  width: 25%; }
+/* line 251, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__eight > .g-grid__item--triple {
+  width: 37.5%; }
+/* line 255, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__eight > .g-grid__item--quad {
+  width: 50%; }
+/* line 259, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__eight > .g-grid__item--quint {
+  width: 62.5%; }
+/* line 263, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__eight > .g-grid__item--hex {
+  width: 75%; }
+/* line 267, ../lib/juis/sass/core/grid-1.0.scss */
+.no-flexbox .g-grid__eight > .g-grid__item--full {
+  width: 100%; }
+
+/*
+* Typography
+*
+* Heavily influenced by http://typecast.com/blog/a-more-modern-scale-for-web-typography
+*/
+/* line 7, ../lib/juis/sass/core/typography-1.0.scss */
+body {
+  font-size: 100%;
+  font-family: "OpenSans-Regular", "Helvetica Neue", Helvetica, tahoma, geneva, arial, sans-serif; }
+
+/* line 14, ../lib/juis/sass/core/typography-1.0.scss */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size-adjust: 0.5; }
+
+/* line 24, ../lib/juis/sass/core/typography-1.0.scss */
+h1,
+h2 {
+  font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, tahoma, geneva, arial, sans-serif; }
+
+/* Body Content */
+/* line 31, ../lib/juis/sass/core/typography-1.0.scss */
+p {
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */
+  margin: 0 0 1rem; }
+  @media (min-width: 720px) {
+    /* line 31, ../lib/juis/sass/core/typography-1.0.scss */
+    p {
+      line-height: 1.375;
+      /* equivalent to 22px */ } }
+
+/* line 44, ../lib/juis/sass/core/typography-1.0.scss */
+h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */
+  margin: 0.5em 0; }
+  @media (min-width: 720px) {
+    /* line 44, ../lib/juis/sass/core/typography-1.0.scss */
+    h1 {
+      font-size: 2.5em;
+      /* 2.5x body copy size = 40px */
+      line-height: 1.125; } }
+  @media (min-width: 900px) {
+    /* line 44, ../lib/juis/sass/core/typography-1.0.scss */
+    h1 {
+      font-size: 3em;
+      /* 3x body copy size = 48px */
+      line-height: 1.05;
+      /* keep to a multiple of the 20px line height and something more appropriate for display headings */ } }
+
+/* line 65, ../lib/juis/sass/core/typography-1.0.scss */
+h2 {
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  /* 30px / 26px */
+  margin: 1.25rem 0 0.75rem; }
+  @media (min-width: 720px) {
+    /* line 65, ../lib/juis/sass/core/typography-1.0.scss */
+    h2 {
+      font-size: 2em;
+      /* 2x body copy size = 32px */
+      line-height: 1.25; } }
+  @media (min-width: 900px) {
+    /* line 65, ../lib/juis/sass/core/typography-1.0.scss */
+    h2 {
+      font-size: 2.25em;
+      /* 2.25x body copy size = 36px */ } }
+
+/* line 84, ../lib/juis/sass/core/typography-1.0.scss */
+h3 {
+  font-size: 1.375em;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636364;
+  /* 25px / 22px */
+  margin: 1.25rem 0 0.75rem; }
+  @media (min-width: 720px) {
+    /* line 84, ../lib/juis/sass/core/typography-1.0.scss */
+    h3 {
+      font-size: 1.5em;
+      /* 1.5x body copy size = 24px */
+      line-height: 1.25; } }
+  @media (min-width: 900px) {
+    /* line 84, ../lib/juis/sass/core/typography-1.0.scss */
+    h3 {
+      font-size: 1.75em;
+      /* 1.75x body copy size = 28px */ } }
+
+/* line 103, ../lib/juis/sass/core/typography-1.0.scss */
+h4 {
+  font-size: 1.125em;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111111;
+  margin: 1.25rem 0 0.75rem; }
+  @media (min-width: 720px) {
+    /* line 103, ../lib/juis/sass/core/typography-1.0.scss */
+    h4 {
+      line-height: 1.22222222;
+      /* (22px / 18px */ } }
+
+/* line 115, ../lib/juis/sass/core/typography-1.0.scss */
+blockquote {
+  font-size: 1.25em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */ }
+  @media (min-width: 720px) {
+    /* line 115, ../lib/juis/sass/core/typography-1.0.scss */
+    blockquote {
+      font-size: 1.5em;
+      /* 24px / 16px = */
+      line-height: 1.45833333;
+      /* 35px / 24px */ } }
+
+/*
+Global .g-
+*/
+/* line 6, ../lib/juis/sass/core/core-1.0.scss */
+.g-container-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 13, ../lib/juis/sass/core/core-1.0.scss */
+.g-nav a {
+  text-decoration: none; }
+/* line 17, ../lib/juis/sass/core/core-1.0.scss */
+.g-nav ul {
+  margin: 0;
+  padding: 0; }
+/* line 22, ../lib/juis/sass/core/core-1.0.scss */
+.g-nav li {
+  display: inline-block;
+  vertical-align: top; }
+
+/* line 28, ../lib/juis/sass/core/core-1.0.scss */
+.g-button {
+  margin-left: 5px;
+  padding: 5px 15px;
+  border: 1px solid; }
+
+/*
+No-SVG
+
+Support for non-svg browsers. Essentially means PNG replacements.
+
+Remove when IE8 support is no longer required
+*/
+/* line 42, ../lib/juis/sass/core/core-1.0.scss */
+.no-svg .g-button__search {
+  background-image: url("../images/icon_search.png");
+  background-position: center; }
+
+/* line 5, ../lib/juis/sass/core/icons-1.0.scss */
+.slider-nav {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap; }
+  /* line 10, ../lib/juis/sass/core/icons-1.0.scss */
+  .slider-nav ul {
+    overflow-x: hidden; }
+  /* line 14, ../lib/juis/sass/core/icons-1.0.scss */
+  .slider-nav li {
+    display: table-cell;
+    border-right: 3px solid #0c2340; }
+
+/* line 20, ../lib/juis/sass/core/icons-1.0.scss */
+.slider-nav__scroll-box {
+  overflow: hidden; }
+
+/* line 24, ../lib/juis/sass/core/icons-1.0.scss */
+.slider-nav__scroll-button {
+  display: none;
+  position: absolute;
+  top: 4px;
+  width: 18px;
+  height: 51px;
+  border: 2px solid #c2c6cc;
+  background: #0c2340;
+  color: #c2c6cc;
+  font-size: 14px;
+  padding: 0; }
+  @media screen and (min-width: 480px) {
+    /* line 24, ../lib/juis/sass/core/icons-1.0.scss */
+    .slider-nav__scroll-button {
+      width: 51px;
+      height: 51px;
+      font-size: 34px; } }
+  /* line 42, ../lib/juis/sass/core/icons-1.0.scss */
+  .slider-nav__scroll-button:active, .slider-nav__scroll-button:hover, .slider-nav__scroll-button:focus {
+    border-color: #ebf1f7;
+    background: #ebf1f7;
+    color: #0c2340; }
+
+/* line 51, ../lib/juis/sass/core/icons-1.0.scss */
+.slider-nav__scroll-button--active {
+  display: block; }
+
+/* line 55, ../lib/juis/sass/core/icons-1.0.scss */
+.slider-nav__scroll-button--left {
+  left: 2px; }
+
+/* line 59, ../lib/juis/sass/core/icons-1.0.scss */
+.slider-nav__scroll-button--right {
+  right: 2px; }
+
+/* line 66, ../lib/juis/sass/core/icons-1.0.scss */
+.i-control {
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  font-size: 10px;
+  padding-top: 37px;
+  border-color: #fff; }
+
+/* line 75, ../lib/juis/sass/core/icons-1.0.scss */
+.i-replace {
+  text-indent: -9999em;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/* line 81, ../lib/juis/sass/core/icons-1.0.scss */
+.i-folder {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20baseProfile%3D%22tiny%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20fill%3D%22%23696969%22%20d%3D%22M1%208.2V5.3c0-.8.7-1.5%201.5-1.5h7.3l2.9%202.9h16.9c.8%200%201.5.7%201.5%201.5v1.5H1V8.2zm28.5%2020h-27c-.8%200-1.5-.7-1.5-1.5V11.1h30v15.6c0%20.8-.7%201.5-1.5%201.5%22%2F%3E%3C%2Fsvg%3E"); }
+
+/* line 85, ../lib/juis/sass/core/icons-1.0.scss */
+.i-folder-add {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20baseProfile%3D%22tiny%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20fill%3D%22%23696969%22%20d%3D%22M1.9%203.8h8c1%200%201.4.9%201.4.9l.9%201.9H30s.9%200%20.9.9v2.8H1V4.8c0-1%20.9-1%20.9-1zM31%2011.3H1v15.9c0%20.9.9.9.9.9h19.5c-.5-.8-.8-1.8-.8-2.8%200-3.1%202.5-5.6%205.6-5.6%202%200%203.7%201%204.7%202.5V11.3zm-3.8%2011.3h-1.9v1.9h-1.9v1.9h1.9v1.9h1.9v-1.9h1.9v-1.9h-1.9v-1.9zm-.9%207.5c2.6%200%204.7-2.1%204.7-4.7s-2.1-4.7-4.7-4.7-4.7%202.1-4.7%204.7%202.1%204.7%204.7%204.7z%22%2F%3E%3C%2Fsvg%3E"); }
+  /* line 88, ../lib/juis/sass/core/icons-1.0.scss */
+  .i-folder-add:hover, .i-folder-add:active, .i-folder-add:focus {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20baseProfile%3D%22tiny%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20fill%3D%22%2313528a%22%20d%3D%22M1.9%203.8h8c1%200%201.4.9%201.4.9l.9%201.9H30s.9%200%20.9.9v2.8H1V4.8c0-1%20.9-1%20.9-1zM31%2011.3H1v15.9c0%20.9.9.9.9.9h19.5c-.5-.8-.8-1.8-.8-2.8%200-3.1%202.5-5.6%205.6-5.6%202%200%203.7%201%204.7%202.5V11.3zm-3.8%2011.3h-1.9v1.9h-1.9v1.9h1.9v1.9h1.9v-1.9h1.9v-1.9h-1.9v-1.9zm-.9%207.5c2.6%200%204.7-2.1%204.7-4.7s-2.1-4.7-4.7-4.7-4.7%202.1-4.7%204.7%202.1%204.7%204.7%204.7z%22%2F%3E%3C%2Fsvg%3E"); }
+
+/* line 95, ../lib/juis/sass/core/icons-1.0.scss */
+.i-file-add {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20baseProfile%3D%22tiny%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20fill%3D%22%23696969%22%20d%3D%22M27.3%2021.4V7.6L20.7%201h-15s-.9%200-.9.9V30s0%20.9.9.9h15.6c-.7-.5-1.3-1.1-1.8-1.9H6.6V2.9h13.1v4.7s0%20.9.9.9h4.7v12.3c.7.1%201.4.3%202%20.6zm-1.9%202.1h-1.9v1.9h-1.9v1.9h1.9v1.9h1.9v-1.9h1.9v-1.9h-1.9v-1.9zm-1%207.5c2.6%200%204.7-2.1%204.7-4.7s-2.1-4.7-4.7-4.7-4.7%202.1-4.7%204.7c.1%202.6%202.1%204.7%204.7%204.7z%22%2F%3E%3C%2Fsvg%3E"); }
+  /* line 98, ../lib/juis/sass/core/icons-1.0.scss */
+  .i-file-add:hover, .i-file-add:active, .i-file-add:focus {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20baseProfile%3D%22tiny%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20fill%3D%22%2313528a%22%20d%3D%22M27.3%2021.4V7.6L20.7%201h-15s-.9%200-.9.9V30s0%20.9.9.9h15.6c-.7-.5-1.3-1.1-1.8-1.9H6.6V2.9h13.1v4.7s0%20.9.9.9h4.7v12.3c.7.1%201.4.3%202%20.6zm-1.9%202.1h-1.9v1.9h-1.9v1.9h1.9v1.9h1.9v-1.9h1.9v-1.9h-1.9v-1.9zm-1%207.5c2.6%200%204.7-2.1%204.7-4.7s-2.1-4.7-4.7-4.7-4.7%202.1-4.7%204.7c.1%202.6%202.1%204.7%204.7%204.7z%22%2F%3E%3C%2Fsvg%3E"); }
+
+/* line 105, ../lib/juis/sass/core/icons-1.0.scss */
+label {
+  display: block; }
+
+/* line 3, ../lib/juis/sass/blocks/global-1.0.scss */
+.g-container-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 10, ../lib/juis/sass/blocks/global-1.0.scss */
+.g-nav a {
+  text-decoration: none; }
+/* line 14, ../lib/juis/sass/blocks/global-1.0.scss */
+.g-nav ul {
+  margin: 0;
+  padding: 0; }
+/* line 19, ../lib/juis/sass/blocks/global-1.0.scss */
+.g-nav li {
+  display: inline-block;
+  vertical-align: top; }
+
+/* line 25, ../lib/juis/sass/blocks/global-1.0.scss */
+.g-button {
+  margin-left: 5px;
+  padding: 5px 15px;
+  border: 1px solid #444; }
+  /* line 30, ../lib/juis/sass/blocks/global-1.0.scss */
+  .g-button:focus, .g-button:active, .g-button:hover {
+    border-color: #919191; }
+
+/* line 37, ../lib/juis/sass/blocks/global-1.0.scss */
+.g-button__search {
+  background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20baseProfile%3D%22tiny%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22%23919191%22%20d%3D%22M16.9%2016.5L12.4%2012c.9-1%201.4-2.2%201.4-3.6%200-3-2.4-5.4-5.4-5.4C5.4%203%203%205.4%203%208.4c0%203%202.4%205.4%205.4%205.4%201.4%200%202.6-.5%203.6-1.4l4.5%204.5c.1.1.3.1.4%200%20.1-.1.1-.3%200-.4zm-8.5-3.3c-2.6%200-4.8-2.1-4.8-4.8s2.1-4.8%204.8-4.8c2.6%200%204.8%202.1%204.8%204.8s-2.2%204.8-4.8%204.8z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+  background-size: contain;
+  text-indent: -999em; }
+
+/*
+No-SVG
+
+Support for non-svg browsers. Essentially means PNG replacements.
+
+Remove when IE8 support is no longer required
+*/
+/* line 51, ../lib/juis/sass/blocks/global-1.0.scss */
+.no-svg .g-button__search {
+  background-image: url("../images/icon_search.png");
+  background-position: center; }
+
+/* line 4, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  background: #fff;
+  border-bottom: 1px solid #ebebeb; }
+
+/* line 12, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-header__box {
+  background: center #000 url("../images/background-header-home.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+  min-height: 60vw; }
+  /* line 18, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-header__box a {
+    color: #fff; }
+
+/* line 23, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-strapline {
+  margin: 1em 0 0;
+  font: 48px "OpenSans-Bold", "Helvetica Neue", Helvetica, tahoma, geneva, arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase; }
+
+/* line 30, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-intro {
+  margin: 1em auto 2.5em;
+  max-width: 40em;
+  font-size: 18px;
+  line-height: 2em;
+  text-align: center; }
+
+/* line 38, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-status {
+  width: 100%;
+  padding: 0 20px;
+  color: #fff;
+  background: #444; }
+  @media screen and (min-width: 720px) {
+    /* line 38, ../lib/juis/sass/blocks/header-1.0.scss */
+    .h-status {
+      padding: 0 55px; } }
+  /* line 48, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-status h1 {
+    margin: 0;
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 1.5; }
+  /* line 55, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-status a {
+    line-height: 1.4;
+    text-decoration: none; }
+  /* line 60, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-status a,
+  .h-status a:link {
+    color: #ccc; }
+  /* line 65, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-status a:active,
+  .h-status a:focus,
+  .h-status a:hover {
+    color: #fff; }
+
+/* line 72, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-status__title {
+  padding-right: 10px; }
+
+/* line 76, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-status__liner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+/* line 81, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-status__icon {
+  font-size: 10px;
+  text-align: center; }
+  /* line 85, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-status__icon svg {
+    margin-left: 0.5em;
+    vertical-align: text-top;
+    fill: currentColor; }
+
+/* line 92, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-status__nav {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 7px 0 0;
+  font-size: 14px; }
+  /* line 97, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-status__nav ul {
+    margin: 0;
+    padding: 0; }
+  @media screen and (min-width: 720px) {
+    /* line 92, ../lib/juis/sass/blocks/header-1.0.scss */
+    .h-status__nav {
+      text-align: right; } }
+  /* line 106, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-status__nav li {
+    margin: 0 0 7px; }
+  /* line 110, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-status__nav a {
+    display: inline-block;
+    margin-right: 4px;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    -webkit-transition: color 200ms ease-in-out, border 200ms ease-in-out, background 200ms ease-in-out;
+    transition: color 200ms ease-in-out, border 200ms ease-in-out, background 200ms ease-in-out; }
+    /* line 119, ../lib/juis/sass/blocks/header-1.0.scss */
+    .h-status__nav a:hover, .h-status__nav a:active, .h-status__nav a:focus {
+      background-color: #696969;
+      color: #fff;
+      border: 1px solid #fff;
+      text-decoration: none; }
+    /* line 128, ../lib/juis/sass/blocks/header-1.0.scss */
+    .h-status__nav a.h-status__icon {
+      padding: 5px 10px; }
+
+/* line 134, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-status__form {
+  font-size: 12px;
+  margin: 0 4px 0 0; }
+  /* line 138, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-status__form input[type="text"],
+  .h-status__form input[type="search"] {
+    line-height: 1.5;
+    height: 2.167em;
+    padding: 3px 6px;
+    background: #696969;
+    border: 1px solid #ccc;
+    color: #fff; }
+    /* line 147, ../lib/juis/sass/blocks/header-1.0.scss */
+    .h-status__form input[type="text"]:focus, .h-status__form input[type="text"]:hover,
+    .h-status__form input[type="search"]:focus,
+    .h-status__form input[type="search"]:hover {
+      border-color: #fff; }
+  /* line 153, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-status__form input[type="submit"] {
+    margin-left: 0;
+    padding: 6px 13px;
+    line-height: 1;
+    background: #444;
+    border-color: #ccc;
+    border-left: 0; }
+    /* line 161, ../lib/juis/sass/blocks/header-1.0.scss */
+    .h-status__form input[type="submit"]:focus, .h-status__form input[type="submit"]:active, .h-status__form input[type="submit"]:hover {
+      background-color: #696969;
+      border-color: #fff; }
+  /* line 171, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-status__form:focus input, .h-status__form:hover input {
+    border-color: #fff; }
+
+/* line 177, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-status__button-search {
+  text-indent: -999em;
+  background: #444; }
+
+/* line 182, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-label__svg {
+  position: relative;
+  display: inline-block; }
+  /* line 186, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-label__svg svg {
+    position: absolute;
+    z-index: 1;
+    top: 3px;
+    left: 3px;
+    fill: #ccc;
+    stroke: #ccc;
+    cursor: pointer; }
+  /* line 199, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-label__svg:hover svg, .h-label__svg:active svg, .h-label__svg:focus svg {
+    fill: #fff;
+    stroke: #fff; }
+
+/* line 206, ../lib/juis/sass/blocks/header-1.0.scss */
+.header-branding {
+  margin: 0 20px;
+  padding: 15px 24px 20px 0; }
+  @media screen and (min-width: 720px) {
+    /* line 206, ../lib/juis/sass/blocks/header-1.0.scss */
+    .header-branding {
+      margin: 0 55px; } }
+  /* line 214, ../lib/juis/sass/blocks/header-1.0.scss */
+  .header-branding h1 {
+    margin: 0;
+    line-height: 1; }
+
+/* line 220, ../lib/juis/sass/blocks/header-1.0.scss */
+.header-brand {
+  display: inline-block;
+  height: 50px;
+  width: 136px;
+  text-indent: -999em;
+  background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20baseProfile%3D%22tiny%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22191%22%20height%3D%2272%22%20viewBox%3D%220%200%20191%2072%22%3E%3Cpath%20fill%3D%22%230C2340%22%20d%3D%22M112.5%2056.8v-3.2h4.6c1%200%201.8-.8%201.8-1.7V12.4c0-1-.8-1.7-1.8-1.7h-4.6v-3h21.6v3h-4.6c-1%200-1.8.8-1.8%201.7v39.5c0%201%20.8%201.7%201.8%201.7h11.1c4%200%205.7-2.4%208.3-8.2l2.4.5-3.3%2010.9h-35.5zm64-46.2c6.4%200%208.4%201%2011.1%206.9h2.5l-2.6-9.9h-44.2l-2.6%209.9h2.5c2.7-5.9%204.7-6.8%2011.1-6.9h5c1%200%201.7.8%201.7%201.7v39.6c0%201-.8%201.7-1.7%201.7h-5.1v3.1h22.4v-3.1h-5.1c-1%200-1.7-.8-1.7-1.7V12.3c0-1%20.8-1.7%201.7-1.7h5zM82.2%2071c7.5-.1%2013.7-4.5%2016.3-10.7%201.4-3.3%201.6-8.2%201.6-14.1V12.4c0-.9.8-1.7%201.7-1.7h4.6v-3L85%207.6v3h4.6c1%200%201.7.8%201.7%201.7v34C91.4%2059%2091%2066.5%2088%2066.9c-2.8.3-4.1-2.6-7.3-2.6-1.9%200-3.4%201.5-3.4%203.1%200%201.9%201.6%203.6%204.9%203.6%22%2F%3E%3Cpath%20fill%3D%22%23BF0D3E%22%20d%3D%22M32.5%2025.1c17.3.1%2030.9%2012.7%2032.9%2028.9%200%200-.6%201.1-.8%201.4-.2.3-.9%201.4-.9%201.4-4.7-13.5-18.1-24-34.1-24-1.6%200-3.7.1-5.3.3l8.2-8zM57.7%201.2c-.1-.1-.3-.2-.5-.2s-.4.1-.5.2L38.2%2019.4c15.9%201.8%2027.6%2013.5%2029.7%2029v-.1C77.2%2022.4%2061%204.4%2057.7%201.2zm1.9%2060.7c.1.1.1.1.2.1s.2%200%20.2-.1c.2-.3.5-.6.7-.9.4-.6%201-1.2%201-1.2-7.2-12-19.4-20-36.1-20-2.7%200-6.3.4-9.1%201.1L1%2056.4s-.1.1-.1.2.1.2.2.2h.1l.9-.6c7.2-5%2016-8%2025.4-8%2012.5%200%2023.8%205.1%2031.8%2013.4l.3.3z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+  background-size: contain; }
+
+/* line 229, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-header__form {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  width: 25em;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 0.15); }
+  /* line 237, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-header__form input {
+    color: #000; }
+
+/* line 243, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-header__submit p {
+  margin-top: 0; }
+/* line 247, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-header__submit input {
+  color: #fff;
+  text-transform: uppercase; }
+
+/* line 253, ../lib/juis/sass/blocks/header-1.0.scss */
+.h-nav-main {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 196px);
+  margin: 0 20px 0 176px;
+  padding: 0;
+  font: 14px "OpenSans-Semibold", "Helvetica Neue", Helvetica, tahoma, geneva, arial, sans-serif; }
+  @media screen and (min-width: 720px) {
+    /* line 253, ../lib/juis/sass/blocks/header-1.0.scss */
+    .h-nav-main {
+      width: calc(100% - 266px);
+      margin: 0 55px 0 211px; } }
+  /* line 267, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-nav-main ul {
+    margin: 0;
+    padding: 0; }
+  /* line 272, ../lib/juis/sass/blocks/header-1.0.scss */
+  .h-nav-main a {
+    display: block;
+    min-height: 20px;
+    padding: 9px 15px 11px;
+    color: #0c2340; }
+    /* line 278, ../lib/juis/sass/blocks/header-1.0.scss */
+    .h-nav-main a:hover, .h-nav-main a:active, .h-nav-main a:focus {
+      background: #ebebeb;
+      text-decoration: none; }
+
+/* line 288, ../lib/juis/sass/blocks/header-1.0.scss */
+.g-drop-menu__list {
+  display: none;
+  position: absolute;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  z-index: 10; }
+  /* line 295, ../lib/juis/sass/blocks/header-1.0.scss */
+  .g-drop-menu__list[aria-hidden="false"] {
+    display: block; }
+  /* line 299, ../lib/juis/sass/blocks/header-1.0.scss */
+  .g-drop-menu__list li {
+    display: block;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap; }
+    /* line 305, ../lib/juis/sass/blocks/header-1.0.scss */
+    .g-drop-menu__list li a {
+      padding: 4px 16px;
+      font-size: 13px; }
+    /* line 310, ../lib/juis/sass/blocks/header-1.0.scss */
+    .g-drop-menu__list li a,
+    .g-drop-menu__list li a:link,
+    .g-drop-menu__list li a:visited {
+      border: 0;
+      color: #0c2340;
+      display: block;
+      margin: 0; }
+    /* line 319, ../lib/juis/sass/blocks/header-1.0.scss */
+    .g-drop-menu__list li a:focus,
+    .g-drop-menu__list li a:active {
+      background-color: #fff; }
+    /* line 324, ../lib/juis/sass/blocks/header-1.0.scss */
+    .g-drop-menu__list li a:hover, .g-drop-menu__list li[aria-selected="true"] a,
+    .g-drop-menu__list li a[aria-expanded="true"] {
+      border: 0;
+      color: #fff;
+      background-color: #696969; }
+
+/* line 335, ../lib/juis/sass/blocks/header-1.0.scss */
+.g-drop-menu__list .g-drop-menu__action {
+  padding-right: calc(1.25em + 4px); }
+/* line 339, ../lib/juis/sass/blocks/header-1.0.scss */
+.g-drop-menu__action[aria-selected="true"] {
+  background-color: #ebebeb; }
+/* line 343, ../lib/juis/sass/blocks/header-1.0.scss */
+.g-drop-menu__action::after {
+  content: "\25bc";
+  margin-left: 0.25em; }
+  /* line 347, ../lib/juis/sass/blocks/header-1.0.scss */
+  .g-drop-menu__list .g-drop-menu__action::after {
+    position: absolute;
+    right: 4px;
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg); }
+  /* line 353, ../lib/juis/sass/blocks/header-1.0.scss */
+  .overflow-nav__list .g-drop-menu__action::after {
+    content: "";
+    margin-left: 0; }
+
+/*
+No-flex
+
+Support for non-flexbox browsers. Remove this once IE9 support is no longer required.
+
+Minimum width fixed to 900px to make things easier
+*/
+/* line 371, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-flexbox .header-box {
+  display: block;
+  position: relative;
+  padding-top: 65px; }
+/* line 377, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-flexbox .h-status {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0; }
+/* line 383, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-flexbox .h-status__liner {
+  display: block; }
+/* line 387, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-flexbox .h-status__nav {
+  position: absolute;
+  right: 55px;
+  top: 0; }
+
+/*
+No-SVG
+
+Support for non-svg browsers. Essentially means PNG replacements.
+
+Remove when IE8 support is no longer required
+*/
+/* line 402, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-svg .header-brand {
+  background-image: url("../images/logo_jlt.png"); }
+/* line 406, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-svg .h-status__nav a.h-status__icon {
+  padding-top: 25px;
+  background-position: center 5px;
+  background-repeat: no-repeat; }
+/* line 412, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-svg .h-status__icon--profile {
+  background-image: url("../images/icon_profile.png"); }
+/* line 416, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-svg .h-status__icon--list {
+  background-image: url("../images/icon_list.png"); }
+
+/*
+No-MediaQueries
+
+Support for non-media query browsers.
+
+Remove when IE8 support is no longer required
+*/
+/* line 429, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-mediaqueries .h-status {
+  padding: 10px 55px; }
+/* line 433, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-mediaqueries .h-status__nav {
+  text-align: right; }
+/* line 437, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-mediaqueries .header-branding {
+  margin: 0 55px;
+  padding: 25px 24px 30px 0; }
+/* line 442, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-mediaqueries .h-nav-main {
+  width: calc(100% - 266px);
+  margin: 0 55px 0 211px;
+  min-height: 105px; }
+  /* line 447, ../lib/juis/sass/blocks/header-1.0.scss */
+  .no-mediaqueries .h-nav-main a {
+    padding: 42px 15px 43px; }
+
+/*
+No-CSSCalc
+
+Support for non-calc browsers.
+
+Remove when IE8 support is no longer required
+*/
+/* line 462, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-csscalc .header-branding {
+  margin: 0 3%; }
+/* line 466, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-csscalc .h-status {
+  padding: 0 3%;
+  width: 94%; }
+/* line 471, ../lib/juis/sass/blocks/header-1.0.scss */
+.no-csscalc .h-nav-main {
+  margin: 0 3%; }
+
+/* line 2, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-main {
+  background: #fff;
+  padding: 15px 20px; }
+  @media screen and (min-width: 720px) {
+    /* line 2, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-main {
+      padding: 20px 55px; }
+      /* line 13, ../lib/juis/sass/core/tools-1.0.scss */
+      .c-main::after {
+        content: "";
+        display: table;
+        clear: both; } }
+
+/* line 14, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-main__box a:not([class]),
+.c-block a:not([class]) {
+  color: #bf0d3e;
+  text-decoration: none; }
+  /* line 18, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-main__box a:not([class]):hover, .c-main__box a:not([class]):active, .c-main__box a:not([class]):focus,
+  .c-block a:not([class]):hover,
+  .c-block a:not([class]):active,
+  .c-block a:not([class]):focus {
+    text-decoration: underline; }
+
+/* line 26, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-action {
+  display: block;
+  white-space: nowrap;
+  color: #bf0d3e;
+  text-decoration: none;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  font-family: "OpenSans-Semibold", "Helvetica Neue", Helvetica, tahoma, geneva, arial, sans-serif; }
+  /* line 35, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-action:hover, .c-action:active, .c-action:focus {
+    text-decoration: underline; }
+
+/* line 42, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-action--secondary {
+  color: #326eab; }
+  /* line 45, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-action--secondary::after {
+    content: ">";
+    margin-left: 0.25em;
+    width: 1em;
+    height: 1em;
+    vertical-align: text-top; }
+
+/* line 54, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-controls {
+  margin-top: -35px; }
+
+/* line 58, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-control {
+  display: inline-block;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  padding: 2px 5px;
+  color: #696969; }
+  /* line 65, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-control:hover, .c-control:active, .c-control:focus {
+    text-decoration: none;
+    color: #13498a;
+    border-color: #13498a;
+    background-color: #fff; }
+
+/* line 75, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-illustration {
+  float: right;
+  max-width: 45vw;
+  margin: 0 0 1em 1em; }
+
+/* line 81, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-illustration-image {
+  max-width: 45vw; }
+
+/* line 85, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-figure {
+  margin: 1em 0; }
+
+/* line 89, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-figure-image {
+  max-width: 100%; }
+
+/* line 93, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-vcard {
+  margin: 1em 0; }
+  /* line 96, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-vcard p {
+    margin: 0; }
+
+/* line 101, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-vcard-region {
+  font-weight: bold; }
+
+/* line 108, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-form p {
+  margin-top: 0; }
+/* line 112, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-form label {
+  display: inline-block; }
+
+/* line 117, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-form__header {
+  margin-top: 0; }
+
+/* line 121, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-fieldset {
+  margin: 1em 0 0;
+  padding: 0;
+  border: 0; }
+
+/* line 128, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-form--inline p {
+  display: inline-block;
+  margin-right: 2em; }
+/* line 133, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-form--inline label {
+  display: block;
+  margin-right: 0.5em;
+  font-weight: bold; }
+
+/* line 140, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-fieldset__submit {
+  margin-top: 0; }
+  /* line 143, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-fieldset__submit .c-button {
+    margin-bottom: 1em; }
+
+/* line 149, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-fieldset__submit--compact p {
+  margin-bottom: 0; }
+
+/* line 156, ../lib/juis/sass/blocks/content-1.0.scss */
+.j-form__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0; }
+  /* line 161, ../lib/juis/sass/blocks/content-1.0.scss */
+  .j-form__list li {
+    padding: 0;
+    margin: 0; }
+
+/* line 167, ../lib/juis/sass/blocks/content-1.0.scss */
+.input-group {
+  display: inline-block; }
+  /* line 170, ../lib/juis/sass/blocks/content-1.0.scss */
+  .input-group .form-control {
+    display: inline-block;
+    float: none;
+    width: auto; }
+
+/* line 177, ../lib/juis/sass/blocks/content-1.0.scss */
+.input-group-addon {
+  display: inline-block;
+  margin-left: -4px;
+  margin-top: -2px;
+  min-width: 38px;
+  min-height: 34px; }
+
+/* line 185, ../lib/juis/sass/blocks/content-1.0.scss */
+.table--scrollable {
+  overflow-x: auto; }
+  /* line 188, ../lib/juis/sass/blocks/content-1.0.scss */
+  .table--scrollable table {
+    width: 100%; }
+
+/* line 195, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-breakout-box {
+  display: inline-block;
+  width: 40%;
+  margin-right: 2%;
+  vertical-align: top;
+  border: 2px solid #919191;
+  padding: 15px;
+  background: #f8f8f8; }
+  /* line 204, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-breakout-box h2 {
+    margin-top: 0; }
+
+/* line 210, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-breakout-box__table th {
+  text-align: left; }
+
+/* line 217, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-main__table-header {
+  margin-bottom: -1em;
+  padding: 0 10px;
+  border: 1px solid #c2c6cc;
+  border-bottom: 0;
+  background: #f8f8f8; }
+  /* line 224, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-main__table-header .c-form {
+    margin-bottom: 0; }
+
+/* line 229, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-main__table {
+  margin: 1em 0;
+  border: 1px solid #c2c6cc; }
+  /* line 234, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-main__table th {
+    text-align: left; }
+  /* line 238, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-main__table thead th {
+    background: #ebf1f7; }
+  /* line 242, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-main__table th,
+  .c-main__table td {
+    padding: 7px 10px;
+    border-top: 1px solid #c2c6cc;
+    border-bottom: 1px solid #c2c6cc; }
+  /* line 249, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-main__table tr:nth-child(2n) td {
+    background: #f8f8f8; }
+
+/* line 254, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-main__table--compact {
+  border: 0; }
+  /* line 257, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-main__table--compact th,
+  .c-main__table--compact td {
+    padding: 0 10px 4px 0;
+    border: 0; }
+
+/* line 264, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-main__table--data {
+  font-size: 14px; }
+  /* line 267, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-main__table--data th,
+  .c-main__table--data td {
+    padding: 3px 7px 4px;
+    border-left: 1px solid #c2c6cc;
+    border-right: 1px solid #c2c6cc; }
+  /* line 274, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-main__table--data tr:nth-child(even) {
+    background: #ebf1f7; }
+
+/* line 279, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-main__cell--currency {
+  text-align: right; }
+
+/* line 285, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-article {
+  word-wrap: break-word; }
+  /* line 294, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-article p:not([class]),
+  .c-article h1:not([class]),
+  .c-article h2:not([class]),
+  .c-article h3:not([class]),
+  .c-article h4:not([class]),
+  .c-article ul:not([class]) {
+    max-width: 38rem; }
+  /* line 299, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-article h1,
+  .c-article h2 {
+    font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, tahoma, geneva, arial, sans-serif; }
+  /* line 304, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-article h2 {
+    color: #bf0d3e; }
+  /* line 308, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-article ul,
+  .c-article ol {
+    padding-left: 0; }
+    /* line 312, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-article ul ul,
+    .c-article ul ol,
+    .c-article ol ul,
+    .c-article ol ol {
+      padding-left: 2rem; }
+  /* line 318, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-article ul:not([class]) {
+    list-style: disc; }
+    /* line 321, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-article ul:not([class]).g-grid__box {
+      list-style: none;
+      max-width: none;
+      padding: 0; }
+
+/* line 329, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-article__container {
+  max-width: 43rem; }
+
+/* line 333, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-article__title {
+  max-width: 38rem; }
+
+/* line 337, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-article__standfirst {
+  font-weight: bold; }
+
+/* line 341, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-article__byline {
+  margin-bottom: 3px;
+  font-size: 14px;
+  color: #bf0d3e; }
+
+/* line 347, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-article__meta {
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-size: 14px; }
+
+/* line 353, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-article__media {
+  width: 100%;
+  max-width: 38rem;
+  margin: 1em 0; }
+
+/* line 359, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-article__media-item {
+  width: 100%; }
+
+/* line 363, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-article__media-item--lead {
+  max-width: none; }
+
+/* line 367, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-article__video {
+  position: relative;
+  padding-bottom: 62.5%;
+  padding-top: 25px;
+  height: 0; }
+  /* line 373, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-article__video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* line 382, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-article__pull {
+  max-width: 36rem;
+  margin: 1em 0;
+  padding: 10px 0.5rem;
+  font-size: 20px;
+  font-style: italic;
+  border-top: 1px solid;
+  border-bottom: 1px solid; }
+  @media screen and (min-width: 480px) {
+    /* line 382, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-article__pull {
+      padding: 10px 1rem;
+      font-size: 24px; } }
+
+/* line 397, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-attachment__group {
+  background: #f8f8f8; }
+  /* line 400, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-attachment__group a {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    width: calc(100% - 20px); }
+    /* line 24, ../lib/juis/sass/core/tools-1.0.scss */
+    .c-attachment__group a:active, .c-attachment__group a:hover, .c-attachment__group a:focus {
+      text-decoration: underline; }
+  /* line 408, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-attachment__group svg {
+    fill: currentColor; }
+  /* line 412, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-attachment__group .c-attachment__list,
+  .c-attachment__group .c-attachment__meta {
+    list-style: none;
+    padding: 0; }
+
+/* line 419, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-attachment__header {
+  padding: 10px;
+  margin: 0;
+  font-size: 20px; }
+  @media screen and (min-width: 480px) {
+    /* line 419, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-attachment__header {
+      font-size: 24px; } }
+
+/* line 429, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-attachment__icon {
+  -ms-flex-preferred-size: 50px;
+      flex-basis: 50px; }
+  @media screen and (min-width: 480px) {
+    /* line 429, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-attachment__icon {
+      -ms-flex-preferred-size: 100px;
+          flex-basis: 100px; } }
+  /* line 436, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-attachment__icon svg {
+    width: 35px;
+    height: 35px; }
+    @media screen and (min-width: 480px) {
+      /* line 436, ../lib/juis/sass/blocks/content-1.0.scss */
+      .c-attachment__icon svg {
+        width: 70px;
+        height: 70px; } }
+
+/* line 447, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-attachment__title {
+  font-size: 16px; }
+  @media screen and (min-width: 480px) {
+    /* line 447, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-attachment__title {
+      font-size: 18px; } }
+
+/* line 455, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-attachment__modified,
+.c-attachment__type {
+  font-size: 14px; }
+
+/* line 462, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-button {
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0.75rem 2rem;
+  border: 0;
+  color: #fff;
+  background: #696969;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  -webkit-transition: background 200ms ease-in-out;
+  transition: background 200ms ease-in-out;
+  text-decoration: none; }
+  /* line 475, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-button:hover, .c-button:active, .c-button:focus {
+    background: #505050; }
+
+/* line 482, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-button--primary {
+  background: #bf0d3e;
+  color: #fff; }
+  /* line 486, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-button--primary:hover, .c-button--primary:active, .c-button--primary:focus {
+    background: #8f0a2f; }
+
+/* line 493, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-button:disabled,
+.c-button--disabled {
+  background: #919191; }
+  /* line 497, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-button:disabled:hover, .c-button:disabled:active, .c-button:disabled:focus,
+  .c-button--disabled:hover,
+  .c-button--disabled:active,
+  .c-button--disabled:focus {
+    background: #919191; }
+
+/* line 506, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-form--search {
+  display: inline-block;
+  margin: 0 22px 0 0;
+  vertical-align: middle; }
+  /* line 511, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-form--search p {
+    display: inline-block;
+    margin: 0; }
+  /* line 516, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-form--search input[type="search"] {
+    vertical-align: middle;
+    padding: 3px 6px;
+    border: 1px solid #c2c6cc;
+    font-size: 18px;
+    height: 33px;
+    outline: 0; }
+    /* line 524, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-form--search input[type="search"]:focus, .c-form--search input[type="search"]:hover {
+      border-color: #919191; }
+  /* line 530, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-form--search input[type="submit"] {
+    vertical-align: middle;
+    margin-left: -1px;
+    border: 1px solid #c2c6cc;
+    background: #fff;
+    line-height: 1;
+    width: 33px;
+    height: 33px; }
+    /* line 539, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-form--search input[type="submit"]:hover, .c-form--search input[type="submit"]:active, .c-form--search input[type="submit"]:focus {
+      background: #f8f8f8; }
+  /* line 548, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-form--search:hover input, .c-form--search:focus input {
+    border-color: #919191; }
+
+/* line 554, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-label__svg {
+  position: relative;
+  display: inline-block; }
+  /* line 558, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-label__svg svg {
+    position: absolute;
+    z-index: 1;
+    fill: #696969;
+    stroke: #696969;
+    cursor: pointer; }
+  /* line 569, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-label__svg:hover svg, .c-label__svg:active svg, .c-label__svg:focus svg {
+    fill: #0c2340;
+    stroke: #0c2340; }
+
+/* line 576, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-form__button--search {
+  text-indent: -999em; }
+
+/* line 582, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-search__results {
+  list-style: none;
+  max-width: 38rem;
+  margin-bottom: 1em;
+  padding: 0; }
+
+/* line 589, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-search__result {
+  border-bottom: 1px solid #ebf1f7;
+  padding: 0.5em; }
+  /* line 593, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-search__result:first-child {
+    border-top: 1px solid #ebf1f7; }
+  /* line 597, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-search__result:hover {
+    background: #ebf1f7; }
+  /* line 601, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-search__result dl {
+    display: inline-block;
+    margin-right: 1em;
+    margin-top: 0.5em; }
+  /* line 607, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-search__result dt {
+    font-size: 12px; }
+  /* line 611, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-search__result dd {
+    margin: 0; }
+
+/* line 616, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-search__title {
+  margin-bottom: 0;
+  font-size: 22px;
+  line-height: 1.1; }
+
+/* line 622, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-search__meta {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #326eab; }
+
+/* line 628, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-search__summary {
+  margin-bottom: 0;
+  font-size: 14px; }
+
+/* line 633, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-search__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+/* line 638, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-search__profile {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+
+/* line 642, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-search__contact {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+
+/* line 646, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-search__nav {
+  list-style: none;
+  padding: 0; }
+  /* line 650, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-search__nav li {
+    display: inline-block; }
+
+/* line 657, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-tool-group {
+  margin-bottom: 1em; }
+
+/* line 661, ../lib/juis/sass/blocks/content-1.0.scss */
+.c-toolbar {
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  /* line 668, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-toolbar li {
+    display: inline-block; }
+  /* line 672, ../lib/juis/sass/blocks/content-1.0.scss */
+  .c-toolbar button {
+    min-width: 77px;
+    padding: 5px;
+    border: 1px solid #c2c6cc;
+    background: #fff;
+    font-size: 12px;
+    -webkit-transition: background 200ms ease-in-out, border 200ms ease-in-out;
+    transition: background 200ms ease-in-out, border 200ms ease-in-out; }
+    /* line 680, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-toolbar button svg {
+      display: block;
+      margin: 0 auto; }
+    /* line 685, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-toolbar button path {
+      -webkit-transition: fill 200ms ease-in-out;
+      transition: fill 200ms ease-in-out;
+      fill: #696969; }
+    /* line 690, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-toolbar button .g-svg__highlight--green,
+    .c-toolbar button .g-svg__highlight--yellow,
+    .c-toolbar button .g-svg__highlight--orange {
+      fill: #c2c6cc; }
+    /* line 696, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-toolbar button[aria-selected="true"], .c-toolbar button:hover, .c-toolbar button:active, .c-toolbar button:focus {
+      border-color: #919191;
+      background: #f8f8f8; }
+      /* line 703, ../lib/juis/sass/blocks/content-1.0.scss */
+      .c-toolbar button[aria-selected="true"] path, .c-toolbar button:hover path, .c-toolbar button:active path, .c-toolbar button:focus path {
+        fill: #0c2340; }
+      /* line 707, ../lib/juis/sass/blocks/content-1.0.scss */
+      .c-toolbar button[aria-selected="true"] .g-svg__highlight--green, .c-toolbar button:hover .g-svg__highlight--green, .c-toolbar button:active .g-svg__highlight--green, .c-toolbar button:focus .g-svg__highlight--green {
+        fill: #a8ad00; }
+      /* line 711, ../lib/juis/sass/blocks/content-1.0.scss */
+      .c-toolbar button[aria-selected="true"] .g-svg__highlight--yellow, .c-toolbar button:hover .g-svg__highlight--yellow, .c-toolbar button:active .g-svg__highlight--yellow, .c-toolbar button:focus .g-svg__highlight--yellow {
+        fill: #f2a900; }
+      /* line 715, ../lib/juis/sass/blocks/content-1.0.scss */
+      .c-toolbar button[aria-selected="true"] .g-svg__highlight--orange, .c-toolbar button:hover .g-svg__highlight--orange, .c-toolbar button:active .g-svg__highlight--orange, .c-toolbar button:focus .g-svg__highlight--orange {
+        fill: #e87722; }
+    /* line 720, ../lib/juis/sass/blocks/content-1.0.scss */
+    .c-toolbar button[aria-disabled="true"] {
+      cursor: default;
+      border-color: #ebebeb;
+      color: #919191;
+      background: #fff; }
+      /* line 726, ../lib/juis/sass/blocks/content-1.0.scss */
+      .c-toolbar button[aria-disabled="true"] path {
+        fill: #c2c6cc; }
+      /* line 730, ../lib/juis/sass/blocks/content-1.0.scss */
+      .c-toolbar button[aria-disabled="true"] .g-svg__highlight--green,
+      .c-toolbar button[aria-disabled="true"] .g-svg__highlight--yellow,
+      .c-toolbar button[aria-disabled="true"] .g-svg__highlight--orange {
+        fill: #ebebeb; }
+
+/*
+No-flex
+
+Support for non-flexbox browsers. Remove this once IE9 support is no longer required.
+
+Minimum width fixed to 900px to make things easier
+*/
+/* line 749, ../lib/juis/sass/blocks/content-1.0.scss */
+.no-flexbox .c-attachment__icon {
+  display: inline-block;
+  width: 100px; }
+/* line 754, ../lib/juis/sass/blocks/content-1.0.scss */
+.no-flexbox .c-attachment__meta {
+  display: inline-block; }
+
+/*
+No-SVG
+
+Support for non-svg browsers. Essentially means PNG replacements.
+
+Remove when IE8 support is no longer required
+*/
+/* line 767, ../lib/juis/sass/blocks/content-1.0.scss */
+.no-svg .c-attachment a {
+  display: block; }
+/* line 771, ../lib/juis/sass/blocks/content-1.0.scss */
+.no-svg .c-attachment__icon {
+  height: 70px;
+  background: url("../images/icon_download.png") no-repeat; }
+
+/*
+No-Mediaqueries
+
+Support for non-media query browsers.
+
+Remove when IE8 support is no longer required
+*/
+/* line 785, ../lib/juis/sass/blocks/content-1.0.scss */
+.no-mediaqueries .c-main__box {
+  padding: 20px 55px; }
+  /* line 13, ../lib/juis/sass/core/tools-1.0.scss */
+  .no-mediaqueries .c-main__box::after {
+    content: "";
+    display: table;
+    clear: both; }
+/* line 790, ../lib/juis/sass/blocks/content-1.0.scss */
+.no-mediaqueries .c-article__subhead {
+  font-size: 24px; }
+/* line 794, ../lib/juis/sass/blocks/content-1.0.scss */
+.no-mediaqueries .c-article__pull {
+  padding: 10px 16px;
+  font-size: 24px; }
+/* line 799, ../lib/juis/sass/blocks/content-1.0.scss */
+.no-mediaqueries .c-attachment__header {
+  font-size: 24px; }
+
+/*
+No-CSSCalc
+
+Support for non-calc browsers.
+
+Remove when IE8 support is no longer required
+*/
+/* line 812, ../lib/juis/sass/blocks/content-1.0.scss */
+.no-csscalc .c-main__box {
+  padding: 20px 3%; }
+
+/* line 3, ../lib/juis/sass/blocks/page-1.0.scss */
+.p-status {
+  padding: 0 20px;
+  background: #13498a;
+  font: 18px "OpenSans-Bold", "Helvetica Neue", Helvetica, tahoma, geneva, arial, sans-serif;
+  color: #fff;
+  height: 60px; }
+  @media screen and (min-width: 480px) {
+    /* line 3, ../lib/juis/sass/blocks/page-1.0.scss */
+    .p-status {
+      padding: 0 55px; } }
+  /* line 14, ../lib/juis/sass/blocks/page-1.0.scss */
+  .p-status p {
+    margin: 0;
+    padding: 16px 0 20px; }
+
+/* line 21, ../lib/juis/sass/blocks/page-1.0.scss */
+.p-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  @media screen and (min-width: 900px) {
+    /* line 21, ../lib/juis/sass/blocks/page-1.0.scss */
+    .p-grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+@media screen and (min-width: 900px) {
+  /* line 32, ../lib/juis/sass/blocks/page-1.0.scss */
+  .p-grid__item--nav {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    max-width: 21em;
+    width: 25%; } }
+
+@media screen and (min-width: 900px) {
+  /* line 40, ../lib/juis/sass/blocks/page-1.0.scss */
+  .p-grid__item--main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 75%;
+            flex: 1 1 75%;
+    min-width: 75%; } }
+
+/* line 49, ../lib/juis/sass/blocks/page-1.0.scss */
+.p-nav {
+  line-height: 1.2;
+  font-family: "OpenSans-Bold", "Helvetica Neue", Helvetica, tahoma, geneva, arial, sans-serif;
+  margin-bottom: 1.25em; }
+  @media screen and (min-width: 900px) {
+    /* line 49, ../lib/juis/sass/blocks/page-1.0.scss */
+    .p-nav {
+      padding-right: 35px; }
+      /* line 57, ../lib/juis/sass/blocks/page-1.0.scss */
+      .p-nav > ul {
+        max-width: 21em; } }
+  /* line 62, ../lib/juis/sass/blocks/page-1.0.scss */
+  .p-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  /* line 68, ../lib/juis/sass/blocks/page-1.0.scss */
+  .p-nav a:not([class]) {
+    display: block;
+    color: #0c2340;
+    padding: 10px 1rem 13px;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc; }
+    /* line 75, ../lib/juis/sass/blocks/page-1.0.scss */
+    .p-nav a:not([class]):hover, .p-nav a:not([class]):active, .p-nav a:not([class]):focus {
+      background-color: #ebebeb;
+      color: #bf0d3e;
+      text-decoration: none; }
+
+/* line 83, ../lib/juis/sass/blocks/page-1.0.scss */
+.p-nav__secondary {
+  font-family: "OpenSans-Regular", "Helvetica Neue", Helvetica, tahoma, geneva, arial, sans-serif; }
+  /* line 87, ../lib/juis/sass/blocks/page-1.0.scss */
+  .p-nav__secondary a:not([class]) {
+    position: relative;
+    padding-left: 2.25rem; }
+  /* line 92, ../lib/juis/sass/blocks/page-1.0.scss */
+  .p-nav__secondary a::before {
+    position: absolute;
+    display: inline-block;
+    left: calc(4px + 1rem);
+    top: 0.5em;
+    content: "\203a";
+    width: 1em;
+    height: 1em; }
+  /* line 102, ../lib/juis/sass/blocks/page-1.0.scss */
+  .p-nav__secondary a[aria-expanded="true"]::before {
+    top: 1em;
+    left: 1.2rem;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+
+/* line 110, ../lib/juis/sass/blocks/page-1.0.scss */
+.p-nav__tertiary {
+  font-size: 14px; }
+  /* line 114, ../lib/juis/sass/blocks/page-1.0.scss */
+  .p-nav__tertiary a:not([class]) {
+    padding-left: 3rem; }
+  /* line 118, ../lib/juis/sass/blocks/page-1.0.scss */
+  .p-nav__tertiary a::before {
+    content: "\00bb";
+    top: 0.6em;
+    left: calc(4px + 2rem); }
+
+/* line 126, ../lib/juis/sass/blocks/page-1.0.scss */
+.p-nav__title {
+  position: relative;
+  margin: 0;
+  padding: 0.75rem 0;
+  font-family: "OpenSans-Regular", "Helvetica Neue", Helvetica, tahoma, geneva, arial, sans-serif;
+  text-align: center;
+  background: #ebebeb; }
+  @media screen and (min-width: 900px) {
+    /* line 126, ../lib/juis/sass/blocks/page-1.0.scss */
+    .p-nav__title {
+      display: none; } }
+
+/* line 139, ../lib/juis/sass/blocks/page-1.0.scss */
+.p-meta,
+.p-tools {
+  margin-top: 0;
+  font-size: 14px; }
+  /* line 144, ../lib/juis/sass/blocks/page-1.0.scss */
+  .p-meta a,
+  .p-tools a {
+    color: #bf0d3e;
+    text-decoration: none; }
+    /* line 148, ../lib/juis/sass/blocks/page-1.0.scss */
+    .p-meta a:hover, .p-meta a:focus, .p-meta a:active,
+    .p-tools a:hover,
+    .p-tools a:focus,
+    .p-tools a:active {
+      color: #fff; }
+
+/* line 156, ../lib/juis/sass/blocks/page-1.0.scss */
+.p-tools__button,
+.p-tools .p-tools__button {
+  border: 1px solid;
+  border-radius: 3px;
+  background: #fff;
+  color: #bf0d3e;
+  padding: 2px 10px;
+  -webkit-transition: background 200ms ease-in-out, color 200ms ease-in-out;
+  transition: background 200ms ease-in-out, color 200ms ease-in-out; }
+  /* line 165, ../lib/juis/sass/blocks/page-1.0.scss */
+  .p-tools__button:hover, .p-tools__button:focus, .p-tools__button:active,
+  .p-tools .p-tools__button:hover,
+  .p-tools .p-tools__button:focus,
+  .p-tools .p-tools__button:active {
+    background: #bf0d3e;
+    color: #fff;
+    border-color: #bf0d3e; }
+  /* line 173, ../lib/juis/sass/blocks/page-1.0.scss */
+  .p-tools__button svg,
+  .p-tools .p-tools__button svg {
+    fill: currentColor;
+    vertical-align: text-top; }
+
+/* line 179, ../lib/juis/sass/blocks/page-1.0.scss */
+.p-title {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #0c2340;
+  text-transform: uppercase; }
+
+/* line 186, ../lib/juis/sass/blocks/page-1.0.scss */
+.p-title--search {
+  margin-bottom: 6px; }
+
+/* line 190, ../lib/juis/sass/blocks/page-1.0.scss */
+.p-intro {
+  font-weight: bold; }
+
+/* line 194, ../lib/juis/sass/blocks/page-1.0.scss */
+.p-snippet--search {
+  font-size: 14px; }
+
+/* Breadcrumbs */
+/* line 200, ../lib/juis/sass/blocks/page-1.0.scss */
+[aria-label="breadcrumbs"] {
+  font-size: 14px;
+  margin-bottom: 1em; }
+  /* line 204, ../lib/juis/sass/blocks/page-1.0.scss */
+  [aria-label="breadcrumbs"] ol {
+    list-style: none;
+    padding-left: 0; }
+  /* line 209, ../lib/juis/sass/blocks/page-1.0.scss */
+  [aria-label="breadcrumbs"] li {
+    display: inline; }
+    /* line 212, ../lib/juis/sass/blocks/page-1.0.scss */
+    [aria-label="breadcrumbs"] li:not(:last-child)::after {
+      font-size: 0.75em;
+      content: "\232a";
+      width: 1em;
+      height: 1em;
+      padding-right: 1em;
+      padding-left: 1em; }
+  /* line 222, ../lib/juis/sass/blocks/page-1.0.scss */
+  [aria-label="breadcrumbs"] a {
+    color: #bf0d3e; }
+
+/*
+No-flex
+
+Support for non-flexbox browsers. Remove this once IE9 support is no longer required.
+
+Minimum width fixed to 900px to make things easier
+*/
+/* line 13, ../lib/juis/sass/core/tools-1.0.scss */
+.no-flexbox .p-grid::after {
+  content: "";
+  display: table;
+  clear: both; }
+/* line 242, ../lib/juis/sass/blocks/page-1.0.scss */
+.no-flexbox .p-grid__item--nav {
+  float: left; }
+/* line 246, ../lib/juis/sass/blocks/page-1.0.scss */
+.no-flexbox .p-grid__item--main {
+  float: left;
+  width: 75%; }
+/* line 252, ../lib/juis/sass/blocks/page-1.0.scss */
+.no-flexbox a.p-tools__button {
+  padding: 5px 10px; }
+
+/*
+No-Mediaqueries
+
+Support for non-media query browsers.
+
+Remove when IE8 support is no longer required
+*/
+/* line 265, ../lib/juis/sass/blocks/page-1.0.scss */
+.no-mediaqueries .p-title {
+  font-size: 35px; }
+
+/*
+No-CSSCalc
+
+Support for non-calc browsers.
+
+Remove when IE8 support is no longer required
+*/
+/* line 279, ../lib/juis/sass/blocks/page-1.0.scss */
+.no-csscalc .p-status,
+.no-csscalc .p-nav,
+.no-csscalc .p-nav {
+  padding: 0 3%; }
+
+/* line 3, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell > .g-grid__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+  @media screen and (min-width: 480px) {
+    /* line 3, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell > .g-grid__item {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; } }
+  @media screen and (min-width: 720px) {
+    /* line 3, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell > .g-grid__item {
+      -ms-flex-preferred-size: 33.33%;
+          flex-basis: 33.33%; } }
+/* line 21, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell > .g-grid__item--full {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+
+/* line 26, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__article {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 0.25rem;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 720px) {
+    /* line 26, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell__article {
+      border: 1px solid #ccc;
+      padding-top: 0; } }
+
+@media screen and (min-width: 720px) {
+  /* line 40, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__content {
+    padding: 0 0.5rem; } }
+@media screen and (min-width: 1080px) {
+  /* line 40, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__content {
+    padding: 0 1rem; } }
+
+/* line 50, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__head {
+  margin: 0 0 0.5rem;
+  font-size: 16px; }
+  @media screen and (min-width: 720px) {
+    /* line 50, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell__head {
+      margin: 10px 0 6px; } }
+  /* line 58, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__head a {
+    text-decoration: none; }
+    /* line 24, ../lib/juis/sass/core/tools-1.0.scss */
+    .newswell__head a:active, .newswell__head a:hover, .newswell__head a:focus {
+      text-decoration: underline; }
+
+/* line 63, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__deck {
+  display: none; }
+  @media screen and (min-width: 720px) {
+    /* line 63, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell__deck {
+      margin: 0 0 1rem;
+      line-height: 1.5;
+      display: block; } }
+
+/* line 73, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__media {
+  float: left;
+  width: 38%;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem; }
+  /* line 13, ../lib/juis/sass/core/tools-1.0.scss */
+  .newswell__media::after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 720px) {
+    /* line 73, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell__media {
+      float: none;
+      width: auto;
+      margin: 0; } }
+  /* line 87, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__media img {
+    width: 100%; }
+
+/* line 92, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__video {
+  position: relative;
+  padding-bottom: 62.5%;
+  padding-top: 25px;
+  height: 0; }
+  /* line 98, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* line 107, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__lead {
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  background: #f8f8f8;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+  /* line 118, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__lead .newswell__head {
+    font-size: 18px;
+    margin-bottom: 6px; }
+  /* line 123, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__lead .newswell__content {
+    padding: 5px 10px; }
+  @media screen and (min-width: 600px) {
+    /* line 107, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell__lead {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      /* line 130, ../lib/juis/sass/blocks/newswell-1.0.scss */
+      .newswell__lead .newswell__media {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+      /* line 134, ../lib/juis/sass/blocks/newswell-1.0.scss */
+      .newswell__lead .newswell__content {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; } }
+  @media screen and (min-width: 720px) {
+    /* line 140, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell__lead .newswell__media {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+    /* line 144, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell__lead .newswell__content {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      padding: 0 20px; } }
+  @media screen and (min-width: 1080px) {
+    /* line 107, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell__lead {
+      font-size: 16px; }
+      /* line 153, ../lib/juis/sass/blocks/newswell-1.0.scss */
+      .newswell__lead .newswell__head {
+        font-size: 22px;
+        margin-bottom: 9px; } }
+  @media screen and (min-width: 1440px) {
+    /* line 160, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell__lead .newswell__media {
+      -ms-flex-preferred-size: 33.3333%;
+          flex-basis: 33.3333%; }
+    /* line 164, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell__lead .newswell__content {
+      -ms-flex-preferred-size: 66.6666%;
+          flex-basis: 66.6666%; } }
+
+/* line 170, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__sidebar {
+  background: #f8f8f8; }
+  /* line 173, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__sidebar ul {
+    list-style: none;
+    padding: 0; }
+    /* line 177, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .c-article .newswell__sidebar ul {
+      padding: 0; }
+
+/* line 183, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__subhead {
+  margin: 0;
+  padding: 10px 20px;
+  border-top: 20px solid #fff;
+  border-bottom: 1px solid #ebf1f7;
+  color: #bf0d3e; }
+  /* line 190, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__subhead:first-child {
+    border-top: 0; }
+  /* line 194, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__subhead a {
+    text-decoration: none;
+    color: #bf0d3e; }
+    /* line 24, ../lib/juis/sass/core/tools-1.0.scss */
+    .newswell__subhead a:active, .newswell__subhead a:hover, .newswell__subhead a:focus {
+      text-decoration: underline; }
+
+@media screen and (min-width: 480px) {
+  /* line 200, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__sub-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+@media screen and (min-width: 900px) {
+  /* line 200, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__sub-list {
+    display: block; } }
+
+/* line 211, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__subitem {
+  -ms-flex-preferred-size: 33.3333%;
+      flex-basis: 33.3333%;
+  font-size: 14px;
+  border-bottom: 1px solid #ebf1f7; }
+  /* line 216, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__subitem a {
+    text-decoration: none; }
+    /* line 24, ../lib/juis/sass/core/tools-1.0.scss */
+    .newswell__subitem a:active, .newswell__subitem a:hover, .newswell__subitem a:focus {
+      text-decoration: underline; }
+  /* line 220, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__subitem p {
+    margin: 0; }
+
+/* line 225, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__subitem--liner {
+  display: block;
+  padding: 10px 20px; }
+
+/* line 230, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  margin-bottom: 0.5rem;
+  color: #696969; }
+  @media screen and (min-width: 480px) {
+    /* line 230, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell__meta {
+      margin-top: -6px;
+      margin-bottom: 1rem;
+      display: block; } }
+  /* line 242, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__lead .newswell__meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -9px; }
+  /* line 247, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell__subitem .newswell__meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media screen and (min-width: 480px) {
+      /* line 247, ../lib/juis/sass/blocks/newswell-1.0.scss */
+      .newswell__subitem .newswell__meta {
+        display: block; } }
+    @media screen and (min-width: 720px) {
+      /* line 247, ../lib/juis/sass/blocks/newswell-1.0.scss */
+      .newswell__subitem .newswell__meta {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+    @media screen and (min-width: 900px) {
+      /* line 247, ../lib/juis/sass/blocks/newswell-1.0.scss */
+      .newswell__subitem .newswell__meta {
+        display: block; } }
+    @media screen and (min-width: 1200px) {
+      /* line 247, ../lib/juis/sass/blocks/newswell-1.0.scss */
+      .newswell__subitem .newswell__meta {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+
+/* line 268, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__meta--sub {
+  font-size: 12px;
+  margin-top: 0; }
+
+/* line 273, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__date {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+
+/* line 277, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell__location {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: right; }
+
+@media screen and (min-width: 720px) {
+  /* line 286, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature > .g-grid__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; } }
+/* line 296, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell--feature .newswell__article {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+  margin-bottom: 20px; }
+  @media screen and (min-width: 720px) {
+    /* line 296, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell--feature .newswell__article {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+/* line 306, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell--feature .newswell__head {
+  font-size: 18px; }
+  @media screen and (min-width: 480px) {
+    /* line 306, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell--feature .newswell__head {
+      font-size: 16px; } }
+  @media screen and (min-width: 720px) {
+    /* line 306, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell--feature .newswell__head {
+      font-size: 16px; } }
+/* line 318, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell--feature .newswell__media {
+  display: none; }
+  @media screen and (min-width: 480px) {
+    /* line 318, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell--feature .newswell__media {
+      display: block; } }
+  @media screen and (min-width: 720px) {
+    /* line 318, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell--feature .newswell__media {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; } }
+@media screen and (min-width: 720px) {
+  /* line 331, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature .newswell__content {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 0 11px; }
+  /* line 336, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature .newswell__deck {
+    font-size: 14px; } }
+@media screen and (min-width: 1080px) {
+  /* line 342, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature .newswell__content {
+    padding: 0 11px; }
+  /* line 346, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature .newswell__head {
+    font-size: 18px; }
+  /* line 350, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature .newswell__deck {
+    font-size: 16px; } }
+@media screen and (min-width: 720px) {
+  /* line 357, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature.g-grid__four .newswell__head, .newswell--feature.g-grid__two .newswell__head {
+    font-size: 18px; } }
+@media screen and (min-width: 900px) {
+  /* line 357, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature.g-grid__four .newswell__head, .newswell--feature.g-grid__two .newswell__head {
+    font-size: 16px; } }
+@media screen and (min-width: 1200px) {
+  /* line 357, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature.g-grid__four .newswell__head, .newswell--feature.g-grid__two .newswell__head {
+    font-size: 18px; } }
+/* line 371, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.newswell--feature.g-grid__four .newswell__deck, .newswell--feature.g-grid__two .newswell__deck {
+  display: none; }
+  @media screen and (min-width: 900px) {
+    /* line 371, ../lib/juis/sass/blocks/newswell-1.0.scss */
+    .newswell--feature.g-grid__four .newswell__deck, .newswell--feature.g-grid__two .newswell__deck {
+      display: block; } }
+@media screen and (min-width: 720px) {
+  /* line 382, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature.g-grid__three > .g-grid__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+  /* line 386, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature.g-grid__three .newswell__media {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+  /* line 390, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature.g-grid__three .newswell__content {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%; }
+  /* line 394, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature.g-grid__three .newswell__head {
+    font-size: 28px; }
+  /* line 398, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .newswell--feature.g-grid__three .newswell__deck {
+    font-size: 18px; } }
+
+/*
+No-flex
+
+Support for non-flexbox browsers. Remove this once IE9 support is no longer required.
+
+Minimum width fixed to 900px to make things easier
+*/
+/* line 415, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.no-flexbox .newswell > .g-grid__item {
+  display: block; }
+/* line 420, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.no-flexbox .newswell__lead,
+.no-flexbox .newswell--feature .newswell__article {
+  display: block; }
+  /* line 13, ../lib/juis/sass/core/tools-1.0.scss */
+  .no-flexbox .newswell__lead::after,
+  .no-flexbox .newswell--feature .newswell__article::after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 425, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .no-flexbox .newswell__lead .newswell__content,
+  .no-flexbox .newswell--feature .newswell__article .newswell__content {
+    float: left;
+    width: calc(50% - 40px); }
+  /* line 430, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .no-flexbox .newswell__lead .newswell__media,
+  .no-flexbox .newswell--feature .newswell__article .newswell__media {
+    float: left;
+    width: 50%; }
+@media screen and (min-width: 480px) {
+  /* line 436, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .no-flexbox .newswell__sub-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+@media screen and (min-width: 900px) {
+  /* line 436, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .no-flexbox .newswell__sub-list {
+    display: block; } }
+@media screen and (min-width: 720px) {
+  /* line 450, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .no-flexbox .newswell--feature.g-grid__three > .g-grid__item {
+    width: 100%; }
+  /* line 454, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .no-flexbox .newswell--feature.g-grid__three .newswell__media {
+    width: 25%; }
+  /* line 458, ../lib/juis/sass/blocks/newswell-1.0.scss */
+  .no-flexbox .newswell--feature.g-grid__three .newswell__content {
+    width: 75%; } }
+
+/*
+No-Mediaqueries
+
+Support for non-media query browsers.
+
+Remove when IE8 support is no longer required
+*/
+/* line 474, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.no-mediaqueries .newswell__lead .newswell__content {
+  padding: 10px 20px; }
+/* line 478, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.no-mediaqueries .newswell__sub-list {
+  display: block; }
+
+/*
+No-CSSCalc
+
+Support for non-calc browsers.
+
+Remove when IE8 support is no longer required
+*/
+/* line 492, ../lib/juis/sass/blocks/newswell-1.0.scss */
+.no-csscalc .newswell__lead .newswell__content {
+  padding: 10px 2%;
+  width: 46%; }
+
+/* line 3, ../lib/juis/sass/blocks/footer-1.0.scss */
+.f-box {
+  padding: 20px;
+  background: #ebebeb;
+  color: #222;
+  font-size: 16px; }
+  @media screen and (min-width: 720px) {
+    /* line 3, ../lib/juis/sass/blocks/footer-1.0.scss */
+    .f-box {
+      padding: 40px 55px; } }
+  /* line 13, ../lib/juis/sass/blocks/footer-1.0.scss */
+  .f-box p {
+    max-width: 38rem; }
+
+/* line 18, ../lib/juis/sass/blocks/footer-1.0.scss */
+.f-title {
+  margin-top: 0;
+  color: #0c2340;
+  font-size: 22px;
+  font-family: "OpenSans-Light", "Helvetica Neue", Helvetica, tahoma, geneva, arial, sans-serif; }
+
+/* line 26, ../lib/juis/sass/blocks/footer-1.0.scss */
+.f-nav-main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+/* line 32, ../lib/juis/sass/blocks/footer-1.0.scss */
+.f-nav-main li {
+  margin-bottom: 1em; }
+/* line 36, ../lib/juis/sass/blocks/footer-1.0.scss */
+.f-nav-main a {
+  color: #0c2340;
+  text-decoration: none; }
+  /* line 40, ../lib/juis/sass/blocks/footer-1.0.scss */
+  .f-nav-main a:hover, .f-nav-main a:active, .f-nav-main a:focus {
+    color: #0c2340;
+    text-decoration: underline; }
+
+/*
+No-CSSCalc
+
+Support for non-calc browsers.
+
+Remove when IE8 support is no longer required
+*/
+/* line 58, ../lib/juis/sass/blocks/footer-1.0.scss */
+.no-csscalc .f-box {
+  padding: 20px 3%; }
+
+/* line 4, ../lib/juis/sass/components/overflow-nav-1.0.scss */
+.menu-overflow__container {
+  overflow: hidden; }
+
+/* line 9, ../lib/juis/sass/components/overflow-nav-1.0.scss */
+.overflow-nav [aria-hidden="true"] {
+  display: none; }
+/* line 13, ../lib/juis/sass/components/overflow-nav-1.0.scss */
+.overflow-nav .overflow-nav__indicator {
+  display: none; }
+  /* line 16, ../lib/juis/sass/components/overflow-nav-1.0.scss */
+  .overflow-nav .overflow-nav__indicator.block {
+    display: inline-block; }
+/* line 21, ../lib/juis/sass/components/overflow-nav-1.0.scss */
+.overflow-nav .overflow-nav__button--active {
+  border: 1px solid #0c2340;
+  padding: 9px 10px 11px;
+  margin: 21px 0 22px; }
+  @media screen and (min-width: 480px) {
+    /* line 21, ../lib/juis/sass/components/overflow-nav-1.0.scss */
+    .overflow-nav .overflow-nav__button--active {
+      padding: 15px;
+      margin: 26px 0 27px; } }
+
+/* line 33, ../lib/juis/sass/components/overflow-nav-1.0.scss */
+.overflow-nav__list {
+  display: none; }
+  /* line 36, ../lib/juis/sass/components/overflow-nav-1.0.scss */
+  .overflow-nav__indicator--active .overflow-nav__list {
+    z-index: 10;
+    display: block;
+    position: absolute;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; }
+    @media screen and (min-width: 480px) {
+      /* line 36, ../lib/juis/sass/components/overflow-nav-1.0.scss */
+      .overflow-nav__indicator--active .overflow-nav__list {
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1; } }
+  /* line 50, ../lib/juis/sass/components/overflow-nav-1.0.scss */
+  .overflow-nav__list > li {
+    display: block; }
+  /* line 54, ../lib/juis/sass/components/overflow-nav-1.0.scss */
+  .overflow-nav__list a {
+    padding: 10px 15px; }
+
+/* line 60, ../lib/juis/sass/components/overflow-nav-1.0.scss */
+.overflow-nav__indicator--active > a {
+  background: #ebebeb;
+  text-decoration: none; }
+
+/* line 1, ../lib/juis/sass/components/accordion-1.0.scss */
+.g-accordion__header {
+  border: 1px solid;
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  text-align: left;
+  font-size: 20px;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation; }
+  /* line 10, ../lib/juis/sass/components/accordion-1.0.scss */
+  .g-accordion__header:before {
+    content: "\2212";
+    margin-right: 0.5em; }
+  /* line 15, ../lib/juis/sass/components/accordion-1.0.scss */
+  .g-accordion__header[aria-expanded="true"]:before {
+    content: "+"; }
+  /* line 19, ../lib/juis/sass/components/accordion-1.0.scss */
+  .g-accordion__header:focus {
+    background: #ebebeb; }
+
+/* line 24, ../lib/juis/sass/components/accordion-1.0.scss */
+.g-accordion__panel {
+  -webkit-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+  border: 1px solid;
+  margin-bottom: 1rem;
+  max-height: 0;
+  border-top: 0;
+  overflow: hidden;
+  will-change: max-height; }
+
+/* line 35, ../lib/juis/sass/components/accordion-1.0.scss */
+.g-accordion__panel--expanded {
+  border-top: 1px solid;
+  max-height: 250vh; }
+
+/* line 1, ../lib/juis/sass/components/autocomplete-1.0.scss */
+.g-ac {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 3px; }
+  /* line 6, ../lib/juis/sass/components/autocomplete-1.0.scss */
+  .g-ac:focus {
+    outline: 0;
+    border-color: #09c;
+    box-shadow: 0 0 3px #09c; }
+
+/* line 13, ../lib/juis/sass/components/autocomplete-1.0.scss */
+.g-ac__container {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle; }
+
+/* line 19, ../lib/juis/sass/components/autocomplete-1.0.scss */
+.g-ac__source {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  padding: 0;
+  margin: 0; }
+  /* line 26, ../lib/juis/sass/components/autocomplete-1.0.scss */
+  .g-ac__source[aria-hidden="true"] {
+    display: none; }
+  /* line 30, ../lib/juis/sass/components/autocomplete-1.0.scss */
+  .g-ac__source li {
+    list-style: none;
+    padding: 5px;
+    background: #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    white-space: nowrap; }
+    /* line 38, ../lib/juis/sass/components/autocomplete-1.0.scss */
+    .g-ac__source li:first-child {
+      border-top: 0; }
+    /* line 42, ../lib/juis/sass/components/autocomplete-1.0.scss */
+    .g-ac__source li:last-child {
+      border-bottom: 0; }
+    /* line 46, ../lib/juis/sass/components/autocomplete-1.0.scss */
+    .g-ac__source li:hover {
+      background: #eee;
+      border-color: #ccc; }
+    /* line 51, ../lib/juis/sass/components/autocomplete-1.0.scss */
+    .g-ac__source li:focus, .g-ac__source li[aria-selected="true"] {
+      background: #dff;
+      border-color: #ccc; }
+  /* line 58, ../lib/juis/sass/components/autocomplete-1.0.scss */
+  .g-ac__source [aria-hidden="true"] {
+    display: none; }
+  /* line 62, ../lib/juis/sass/components/autocomplete-1.0.scss */
+  .g-ac__source [aria-expanded="false"] {
+    display: none; }
+
+/* line 68, ../lib/juis/sass/components/autocomplete-1.0.scss */
+.g-form input {
+  line-height: 1; }
+/* line 72, ../lib/juis/sass/components/autocomplete-1.0.scss */
+.g-form select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+/* line 77, ../lib/juis/sass/components/autocomplete-1.0.scss */
+.g-form__activator {
+  line-height: 1;
+  padding: 3px;
+  border: 1px solid #ccc; }
+
+/* line 83, ../lib/juis/sass/components/autocomplete-1.0.scss */
+mark {
+  font-weight: bold;
+  background-color: #ff0; }
+
+/* line 88, ../lib/juis/sass/components/autocomplete-1.0.scss */
+.g-rf__target {
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin-top: -1px;
+  box-shadow: 0 1px 3px #999; }
+
+/* line 3, ../lib/juis/sass/components/data-grid-1.0.scss */
+.c-data-grid {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em; }
+  /* line 8, ../lib/juis/sass/components/data-grid-1.0.scss */
+  .c-data-grid th,
+  .c-data-grid td {
+    padding: 6px 10px;
+    text-align: left; }
+  /* line 14, ../lib/juis/sass/components/data-grid-1.0.scss */
+  .c-data-grid input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem; }
+  /* line 20, ../lib/juis/sass/components/data-grid-1.0.scss */
+  .c-data-grid thead th {
+    border-bottom: 1px solid #616a74;
+    font-size: 12px; }
+  /* line 26, ../lib/juis/sass/components/data-grid-1.0.scss */
+  .c-data-grid tr:nth-child(2n+1) td {
+    background: #f8f8f8; }
+  /* line 31, ../lib/juis/sass/components/data-grid-1.0.scss */
+  .c-data-grid tr[aria-selected="true"] td {
+    background: #ebebeb; }
+  /* line 35, ../lib/juis/sass/components/data-grid-1.0.scss */
+  .c-data-grid tr[aria-selected="true"]:nth-child(2n+1) td {
+    background: #dedede; }
+  /* line 41, ../lib/juis/sass/components/data-grid-1.0.scss */
+  .c-data-grid tr:hover td {
+    background: #ebf1f7; }
+  /* line 45, ../lib/juis/sass/components/data-grid-1.0.scss */
+  .c-data-grid tr:hover:nth-child(2n+1) td {
+    background: #d9e4f0; }
+
+/* line 1, ../lib/juis/sass/components/forms-1.0.scss */
+mark {
+  font-weight: bold;
+  background-color: #71e5ff; }
+
+/* line 7, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0; }
+/* line 13, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form legend {
+  font-size: 20px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+/* line 19, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form label {
+  display: block; }
+  /* line 22, ../lib/juis/sass/components/forms-1.0.scss */
+  .c-form label * {
+    vertical-align: middle; }
+
+/* line 28, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form__field-box {
+  margin-bottom: 1em; }
+
+/* line 32, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form__hint {
+  display: block;
+  color: #326eab; }
+
+/* line 37, ../lib/juis/sass/components/forms-1.0.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  border: 2px solid #696969;
+  padding: 4px;
+  line-height: 1.25; }
+  /* line 44, ../lib/juis/sass/components/forms-1.0.scss */
+  input[type="text"]:disabled,
+  input[type="email"]:disabled,
+  textarea:disabled {
+    background-color: #ccc; }
+  /* line 48, ../lib/juis/sass/components/forms-1.0.scss */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    outline: 2px solid #f2a900; }
+
+/* line 53, ../lib/juis/sass/components/forms-1.0.scss */
+input[type="radio"],
+input[type="checkbox"] {
+  width: 1.5em;
+  height: 1.5em; }
+
+/* line 59, ../lib/juis/sass/components/forms-1.0.scss */
+select {
+  border: 2px solid #696969;
+  padding: 4px;
+  line-height: 1.25;
+  background-color: #fff; }
+  /* line 65, ../lib/juis/sass/components/forms-1.0.scss */
+  select:disabled {
+    background-color: #ccc; }
+  /* line 69, ../lib/juis/sass/components/forms-1.0.scss */
+  select:focus {
+    outline: 2px solid #f2a900; }
+
+/* line 76, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form__select-box {
+  display: inline-block;
+  position: relative; }
+  /* line 80, ../lib/juis/sass/components/forms-1.0.scss */
+  .c-form__select-box select {
+    display: inline-block;
+    padding: 4px 28px 4px 4px;
+    border-radius: 0;
+    font: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+    /* line 91, ../lib/juis/sass/components/forms-1.0.scss */
+    .c-form__select-box select::-ms-expand {
+      display: none; }
+  /* line 96, ../lib/juis/sass/components/forms-1.0.scss */
+  .c-form__select-box::after {
+    content: "\25bc";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 60%;
+    line-height: 30px;
+    border: 2px solid #696969;
+    padding: 0 7px;
+    background: #696969;
+    color: #fff;
+    pointer-events: none; }
+
+/* line 112, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form__field-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+/* line 119, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form__field-box--error input,
+.c-form__field-box--error input:focus,
+.c-form__field-box--error select,
+.c-form__field-box--error select:focus,
+.c-form__field-box--error textarea,
+.c-form__field-box--error textarea:focus,
+.c-form__field-box--error .c-form__select-box::after {
+  border-color: #bf0d3e; }
+
+/* line 131, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form__sub-field-box[aria-hidden="true"] {
+  display: none; }
+
+/* line 136, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form__label--error {
+  color: #bf0d3e; }
+
+/* line 140, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form__block-label {
+  border: 1px solid #ccc;
+  background: #ebebeb;
+  padding: 0.75em 1em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  -webkit-transition: border ease-in-out 200ms, background ease-in-out 200ms;
+  transition: border ease-in-out 200ms, background ease-in-out 200ms; }
+  /* line 148, ../lib/juis/sass/components/forms-1.0.scss */
+  .c-form__block-label:hover {
+    border-color: #696969; }
+
+/* line 153, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form__block-label--focussed {
+  outline: 2px solid #f2a900;
+  border-color: #ebebeb; }
+  /* line 157, ../lib/juis/sass/components/forms-1.0.scss */
+  .c-form__block-label--focussed *:focus {
+    outline: none; }
+
+/* line 162, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form__block-label--checked {
+  border-color: #696969;
+  background-color: #f8f8f8; }
+
+/* line 167, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form__block-label--error {
+  border-color: #bf0d3e; }
+
+/* line 171, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form__block-label--disabled {
+  border-color: #ebebeb;
+  color: #696969; }
+  /* line 175, ../lib/juis/sass/components/forms-1.0.scss */
+  .c-form__block-label--disabled:hover {
+    border-color: #ebebeb; }
+
+/* line 181, ../lib/juis/sass/components/forms-1.0.scss */
+.c-form__field-box--inline .c-form__block-label {
+  display: inline-block;
+  margin-right: 0.5em; }
+
+/* line 1, ../lib/juis/sass/components/page-nav-1.0.scss */
+.p-slider-nav__activator {
+  position: absolute;
+  display: inline-block;
+  border: 1px solid;
+  padding: 0.75em 0.5em;
+  left: 0.5em;
+  top: 0.25em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  /* line 10, ../lib/juis/sass/components/page-nav-1.0.scss */
+  .p-slider-nav__activator:hover {
+    background: #fff; }
+  /* line 15, ../lib/juis/sass/components/page-nav-1.0.scss */
+  .p-slider-box--active .p-slider-nav__activator .lines::before, .p-slider-box--active .p-slider-nav__activator .lines::after {
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    top: 0; }
+  /* line 21, ../lib/juis/sass/components/page-nav-1.0.scss */
+  .p-slider-box--active .p-slider-nav__activator .lines::before {
+    -webkit-transform: rotate3d(0, 0, 1, -40deg);
+            transform: rotate3d(0, 0, 1, -40deg); }
+  /* line 25, ../lib/juis/sass/components/page-nav-1.0.scss */
+  .p-slider-box--active .p-slider-nav__activator .lines::after {
+    -webkit-transform: rotate3d(0, 0, 1, 40deg);
+            transform: rotate3d(0, 0, 1, 40deg); }
+  /* line 30, ../lib/juis/sass/components/page-nav-1.0.scss */
+  .p-slider-nav__activator .lines {
+    position: relative;
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem; }
+    /* line 36, ../lib/juis/sass/components/page-nav-1.0.scss */
+    .p-slider-nav__activator .lines::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      display: inline-block;
+      width: 1.25rem;
+      height: 0.25rem;
+      background: #000;
+      border-radius: 0.125rem;
+      -webkit-transition: 300ms;
+      transition: 300ms;
+      -webkit-transform-origin: 0.125rem center;
+          -ms-transform-origin: 0.125rem center;
+              transform-origin: 0.125rem center;
+      top: 0;
+      -webkit-transform: rotate3d(0, 0, 1, 40deg);
+              transform: rotate3d(0, 0, 1, 40deg); }
+    /* line 42, ../lib/juis/sass/components/page-nav-1.0.scss */
+    .p-slider-nav__activator .lines::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      display: inline-block;
+      width: 1.25rem;
+      height: 0.25rem;
+      background: #000;
+      border-radius: 0.125rem;
+      -webkit-transition: 300ms;
+      transition: 300ms;
+      -webkit-transform-origin: 0.125rem center;
+          -ms-transform-origin: 0.125rem center;
+              transform-origin: 0.125rem center;
+      top: 0;
+      -webkit-transform: rotate3d(0, 0, 1, -40deg);
+              transform: rotate3d(0, 0, 1, -40deg); }
+
+/* line 50, ../lib/juis/sass/components/page-nav-1.0.scss */
+.p-slider-nav--scripted {
+  z-index: 100;
+  position: absolute;
+  max-width: 16em;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  -webkit-transform: translateX(-300px);
+      -ms-transform: translateX(-300px);
+          transform: translateX(-300px);
+  background: rgba(255, 255, 255, 0.95);
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb; }
+  @media screen and (min-width: 900px) {
+    /* line 50, ../lib/juis/sass/components/page-nav-1.0.scss */
+    .p-slider-nav--scripted {
+      z-index: auto;
+      position: static;
+      overflow: none;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      border: 0; } }
+
+/* line 70, ../lib/juis/sass/components/page-nav-1.0.scss */
+.p-slider-nav--active {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0); }
+
+/* line 75, ../lib/juis/sass/components/page-nav-1.0.scss */
+.p-slider-nav--script-init {
+  opacity: 0; }
+  @media screen and (min-width: 900px) {
+    /* line 75, ../lib/juis/sass/components/page-nav-1.0.scss */
+    .p-slider-nav--script-init {
+      opacity: 1; } }
+
+/* line 1, ../lib/juis/sass/components/rich-field-1.0.scss */
+mark {
+  font-weight: bold;
+  background-color: #ff0; }
+
+/* line 6, ../lib/juis/sass/components/rich-field-1.0.scss */
+.g-rf__activator {
+  line-height: 1;
+  padding: 3px;
+  border: 1px solid #ccc; }
+
+/* line 12, ../lib/juis/sass/components/rich-field-1.0.scss */
+.g-rf__target {
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin-top: -1px;
+  box-shadow: 0 1px 3px #999; }
+
+/* line 5, ../lib/juis/sass/components/slider-nav-1.0.scss */
+.slider-nav {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap; }
+  /* line 10, ../lib/juis/sass/components/slider-nav-1.0.scss */
+  .slider-nav ul {
+    overflow-x: hidden; }
+  /* line 14, ../lib/juis/sass/components/slider-nav-1.0.scss */
+  .slider-nav li {
+    display: table-cell;
+    border-right: 3px solid #0c2340; }
+
+/* line 20, ../lib/juis/sass/components/slider-nav-1.0.scss */
+.slider-nav__scroll-box {
+  overflow: hidden; }
+
+/* line 24, ../lib/juis/sass/components/slider-nav-1.0.scss */
+.slider-nav__scroll-button {
+  display: none;
+  position: absolute;
+  top: 4px;
+  width: 18px;
+  height: 51px;
+  border: 2px solid #c2c6cc;
+  background: #0c2340;
+  color: #c2c6cc;
+  font-size: 14px;
+  padding: 0; }
+  @media screen and (min-width: 480px) {
+    /* line 24, ../lib/juis/sass/components/slider-nav-1.0.scss */
+    .slider-nav__scroll-button {
+      width: 51px;
+      height: 51px;
+      font-size: 34px; } }
+  /* line 42, ../lib/juis/sass/components/slider-nav-1.0.scss */
+  .slider-nav__scroll-button:active, .slider-nav__scroll-button:hover, .slider-nav__scroll-button:focus {
+    border-color: #ebf1f7;
+    background: #ebf1f7;
+    color: #0c2340; }
+
+/* line 51, ../lib/juis/sass/components/slider-nav-1.0.scss */
+.slider-nav__scroll-button--active {
+  display: block; }
+
+/* line 55, ../lib/juis/sass/components/slider-nav-1.0.scss */
+.slider-nav__scroll-button--left {
+  left: 2px; }
+
+/* line 59, ../lib/juis/sass/components/slider-nav-1.0.scss */
+.slider-nav__scroll-button--right {
+  right: 2px; }
+
+/* line 5, ../lib/juis/sass/components/tab-list-1.0.scss */
+.g-tab__tab-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+/* line 11, ../lib/juis/sass/components/tab-list-1.0.scss */
+.g-tab__tab {
+  display: inline-block; }
+  /* line 14, ../lib/juis/sass/components/tab-list-1.0.scss */
+  .g-tab__tab a {
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid;
+    border-bottom: 0;
+    background: #eef;
+    text-decoration: none;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation; }
+    /* line 23, ../lib/juis/sass/components/tab-list-1.0.scss */
+    .g-tab__tab a:hover, .g-tab__tab a:focus {
+      background: #000;
+      border-color: #000;
+      color: #fff; }
+  /* line 31, ../lib/juis/sass/components/tab-list-1.0.scss */
+  .g-tab__tab a:active, .g-tab__tab[aria-selected="true"] a {
+    background: #fff;
+    border-color: #000;
+    color: #000; }
+
+/* line 39, ../lib/juis/sass/components/tab-list-1.0.scss */
+.g-tab__tab-panel {
+  border: 2px solid; }
+  /* line 42, ../lib/juis/sass/components/tab-list-1.0.scss */
+  .g-tab__tab-panel[aria-hidden="true"] {
+    display: none; }
+
+/*
+Project styles
+
+Anything not bound for the template goes in here
+*/
+/*
+Section highlights
+*/
+/* line 13, ../sass/project.scss */
+#h-nav-home {
+  background: #ebebeb;
+  text-decoration: none; }
+
+/*
+Page highlights
+*/
+/* line 20, ../sass/project.scss */
+.p-accordion #p-nav-accordion {
+  background-color: #ebebeb;
+  color: #bf0d3e;
+  text-decoration: none; }
+
+/* line 27, ../sass/project.scss */
+.c-form label {
+  display: block; }
+
+@media screen and (min-width: 1440px) {
+  /* line 33, ../sass/project.scss */
+  .c-main {
+    max-width: 1440px;
+    margin: 0 auto; }
+
+  /* line 38, ../sass/project.scss */
+  .h-status__liner,
+  .f-box .g-grid__box {
+    max-width: 1330px;
+    margin: 0 auto; }
+
+  /* line 44, ../sass/project.scss */
+  .h-nav-main {
+    max-width: 1064px;
+    right: auto;
+    margin: 0 auto; }
+
+  /* line 50, ../sass/project.scss */
+  .header-branding {
+    margin-left: calc(50% - 665px); } }
+/* line 57, ../sass/project.scss */
+.c-main--landing {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+/* line 62, ../sass/project.scss */
+.c-skybox {
+  background: url("../images/hero.jpg") no-repeat;
+  background-size: cover; }
+
+/* line 67, ../sass/project.scss */
+.c-skybox--alternate {
+  background-image: url("../images/hero-secondary.jpg"); }
+
+/* line 71, ../sass/project.scss */
+.c-block__outer-box {
+  padding: 20px 55px; }
+
+/* line 75, ../sass/project.scss */
+.c-block__inner-box {
+  padding: 1.5rem 0; }
+
+/* line 79, ../sass/project.scss */
+.c-block__inner-box--padded {
+  padding: 1.5rem 1rem; }
+
+/* line 83, ../sass/project.scss */
+.c-block__box {
+  max-width: 48rem;
+  background: rgba(12, 35, 64, 0.5);
+  padding: 0.5rem 1rem;
+  color: #fff; }
+  /* line 89, ../sass/project.scss */
+  .c-block__box * {
+    color: #fff; }
+  /* line 93, ../sass/project.scss */
+  .c-block__box h2 {
+    margin-top: 0;
+    line-height: 1.1;
+    text-transform: uppercase; }
+  /* line 99, ../sass/project.scss */
+  .c-block__box .c-skybox__kicker {
+    color: #bf0d3e; }
+
+/* line 107, ../sass/project.scss */
+.c-columnar h3:first-child {
+  margin-top: 0; }
+/* line 111, ../sass/project.scss */
+.c-columnar ul,
+.c-columnar ol {
+  column-break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid; }
+
+@media screen and (min-width: 480px) {
+  /* line 119, ../sass/project.scss */
+  .c-columnar--triple {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; } }
+@media screen and (min-width: 720px) {
+  /* line 119, ../sass/project.scss */
+  .c-columnar--triple {
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3; } }
+
+/* line 135, ../sass/project.scss */
+.c-list--compact {
+  list-style: none;
+  padding-left: 0; }
+
+/* line 142, ../sass/project.scss */
+.c-search__box {
+  background: rgba(255, 255, 255, 0.5); }
+
+/* line 148, ../sass/project.scss */
+.c-search__form fieldset {
+  border: 0;
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 0; }
+/* line 155, ../sass/project.scss */
+.c-search__form label {
+  font-size: 26px;
+  color: #bf0d3e;
+  padding-bottom: 0.25em; }
+
+.okta-form-title {
+    font-size: 1em;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 220px;
+}
+
+.o-form-fieldset {
+    margin-bottom: 20px;
+}
+
+.o-form-button-bar {
+    margin-bottom: 1em;
+}
+
+.button {
+    display: inline-block !important;
+    margin-right: 1em !important;
+    margin-left: 0px !important;
+    padding: 0.75rem 2rem !important;
+    border: 0 !important;
+    color: #fff !important;
+    background: #696969;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    -webkit-transition: background 200ms ease-in-out !important;
+    transition: background 200ms ease-in-out !important;
+    text-decoration: none !important;
+}
+
+.button-primary {
+    background: #bf0d3e !important;
+    color: #fff !important;
+}
+
+.help-links {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.auth-footer a {
+    display: block;
+    white-space: nowrap;
+    color: #bf0d3e;
+    text-decoration: none;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    font-family: "OpenSans-Semibold", "Helvetica Neue", Helvetica, tahoma, geneva, arial, sans-serif;
+}

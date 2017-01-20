@@ -1,0 +1,496 @@
+// Small screen overrides
+.newswell {
+  > .g-grid__item {
+    display: flex;
+    flex-basis: 100%;
+
+    @media screen and (min-width: $break-espresso) {
+      flex-basis: 50%;
+    }
+
+    @media screen and (min-width: $break-doppio) {
+      flex-basis: 33.33%;
+    }
+
+    @media screen and (min-width: $break-cafe-creme) {
+  //    flex-basis: 25%;
+    }
+  }
+
+  //restore full grid
+  > .g-grid__item--full {
+    flex-basis: 100%;
+  }
+}
+
+.newswell__article {
+  flex-basis: 100%;
+  border-top: 1px solid $neutral-light-grey;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 0.25rem;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: $break-doppio) {
+    border: 1px solid $neutral-light-grey;
+    padding-top: 0;
+  }
+}
+
+.newswell__content {
+  @media screen and (min-width: $break-doppio) {
+    padding: 0 0.5rem;
+  }
+
+  @media screen and (min-width: $break-lungo) {
+    padding: 0 1rem;
+  }
+}
+
+.newswell__head {
+  margin: 0 0 0.5rem;
+  font-size: 16px;
+
+  @media screen and (min-width: $break-doppio) {
+    margin: 10px 0 6px;
+  }
+
+  a {
+    @include inverted-anchor();
+  }
+}
+
+.newswell__deck {
+  display: none;
+
+  @media screen and (min-width: $break-doppio) {
+    margin: 0 0 1rem;
+    line-height: 1.5;
+    display: block;
+  }
+}
+
+.newswell__media {
+  @include clearfix();
+
+  float: left;
+  width: 38%;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+
+  @media screen and (min-width: $break-doppio) {
+    float: none;
+    width: auto;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.newswell__video {
+  position: relative;
+  padding-bottom: 62.5%;
+  padding-top: 25px;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.newswell__lead {
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  background: $neutral-ultra-light-grey;
+  flex-direction: row;
+
+  // technically this isn't required (implied width is already 100%)
+  // however IE 11 fails to calculate the correct width automatically.
+  flex-basis: 100%;
+
+  .newswell__head {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .newswell__content {
+    padding: 5px 10px;
+  }
+
+  @media screen and (min-width: $break-galao) {
+    display: flex;
+
+    .newswell__media {
+      flex-basis: 50%;
+    }
+
+    .newswell__content {
+      flex-basis: 50%;
+    }
+  }
+
+  @media screen and (min-width: $break-doppio) {
+    .newswell__media {
+      flex-basis: 50%;
+    }
+
+    .newswell__content {
+      flex-basis: 50%;
+      padding: 0 20px;
+    }
+  }
+
+  @media screen and (min-width: $break-lungo) {
+    font-size: 16px;
+
+    .newswell__head {
+      font-size: 22px;
+      margin-bottom: 9px;
+    }
+  }
+
+  @media screen and (min-width: $break-black-eye) {
+    .newswell__media {
+      flex-basis: 33.3333%;
+    }
+
+    .newswell__content {
+      flex-basis: 66.6666%;
+    }
+  }
+}
+
+.newswell__sidebar {
+  background: $neutral-ultra-light-grey;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    .c-article & {
+      padding: 0;
+    }
+  }
+}
+
+.newswell__subhead {
+  margin: 0;
+  padding: 10px 20px;
+  border-top: 20px solid $pure-white;
+  border-bottom: 1px solid $jlt-bluegrey-ultra-light;
+  color: $jlt-red;
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  a {
+    @include inverted-anchor();
+    color: $jlt-red;
+  }
+}
+
+.newswell__sub-list {
+  @media screen and (min-width: $break-espresso) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $break-cafe-creme) {
+    display: block;
+  }
+}
+
+.newswell__subitem {
+  flex-basis: 33.3333%;
+  font-size: 14px;
+  border-bottom: 1px solid $jlt-bluegrey-ultra-light;
+
+  a {
+    @include inverted-anchor();
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.newswell__subitem--liner {
+  display: block;
+  padding: 10px 20px;
+}
+
+.newswell__meta {
+  display: flex;
+  font-size: 13px;
+  margin-bottom: 0.5rem;
+  color: $neutral-mid-text-grey;
+
+  @media screen and (min-width: $break-espresso) {
+    margin-top: -6px;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .newswell__lead & {
+    display: flex;
+    margin-top: -9px;
+  }
+
+  .newswell__subitem & {
+    display: flex;
+
+    @media screen and (min-width: $break-espresso) {
+      display: block;
+    }
+
+    @media screen and (min-width: $break-doppio) {
+      display: flex;
+    }
+
+    @media screen and (min-width: $break-cafe-creme) {
+      display: block;
+    }
+
+    @media screen and (min-width: $break-mocha) {
+      display: flex;
+    }
+  }
+}
+
+.newswell__meta--sub {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.newswell__date {
+  flex-basis: 50%;
+}
+
+.newswell__location {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+// Feature newswell
+
+.newswell--feature {
+  // Small screen overrides
+  > .g-grid__item {
+    @media screen and (min-width: $break-doppio) {
+      flex-basis: 50%;
+    }
+
+    @media screen and (min-width: $break-cafe-creme) {
+  //    flex-basis: 25%;
+    }
+  }
+
+  .newswell__article {
+    flex-direction: row;
+    padding: 0;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $break-doppio) {
+      display: flex;
+    }
+  }
+
+  .newswell__head {
+    font-size: 18px;
+
+    @media screen and (min-width: $break-espresso) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $break-doppio) {
+      font-size: 16px;
+    }
+  }
+
+  .newswell__media {
+    display: none;
+
+    @media screen and (min-width: $break-espresso) {
+      display: block;
+    }
+
+    @media screen and (min-width: $break-doppio) {
+      flex-basis: 50%;
+    }
+  }
+
+  @media screen and (min-width: $break-doppio) {
+    .newswell__content {
+      flex-basis: 50%;
+      padding: 0 $grid-base / 2;
+    }
+
+    .newswell__deck {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: $break-lungo) {
+    .newswell__content {
+      padding: 0 $grid-base / 2;
+    }
+
+    .newswell__head {
+      font-size: 18px;
+    }
+
+    .newswell__deck {
+      font-size: 16px;
+    }
+  }
+
+  &.g-grid__four,
+  &.g-grid__two {
+    .newswell__head {
+      @media screen and (min-width: $break-doppio) {
+        font-size: 18px;
+      }
+
+      @media screen and (min-width: $break-cafe-creme) {
+        font-size: 16px;
+      }
+
+      @media screen and (min-width: $break-mocha) {
+        font-size: 18px;
+      }
+    }
+
+    .newswell__deck {
+      display: none;
+
+      @media screen and (min-width: $break-cafe-creme) {
+        display: block;
+      }
+    }
+  }
+
+  &.g-grid__three {
+    @media screen and (min-width: $break-doppio) {
+      > .g-grid__item {
+        flex-basis: 100%;
+      }
+
+      .newswell__media {
+        flex-basis: 25%;
+      }
+
+      .newswell__content {
+        flex-basis: 75%;
+      }
+
+      .newswell__head {
+        font-size: 28px;
+      }
+
+      .newswell__deck {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+/*
+No-flex
+
+Support for non-flexbox browsers. Remove this once IE9 support is no longer required.
+
+Minimum width fixed to 900px to make things easier
+*/
+
+//.flexbox {
+.no-flexbox {
+  .newswell > .g-grid__item {
+    display: block;
+  }
+
+  //newswell
+  .newswell__lead,
+  .newswell--feature .newswell__article {
+    @include clearfix();
+    display: block;
+
+    .newswell__content {
+      float: left;
+      width: calc(50% - 40px);
+    }
+
+    .newswell__media {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  .newswell__sub-list {
+    @media screen and (min-width: $break-espresso) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $break-cafe-creme) {
+      display: block;
+    }
+  }
+
+  .newswell--feature {
+    &.g-grid__three {
+      @media screen and (min-width: $break-doppio) {
+        > .g-grid__item {
+          width: 100%;
+        }
+
+        .newswell__media {
+          width: 25%;
+        }
+
+        .newswell__content {
+          width: 75%;
+        }
+      }
+    }
+  }
+}
+
+/*
+No-Mediaqueries
+
+Support for non-media query browsers.
+
+Remove when IE8 support is no longer required
+*/
+.no-mediaqueries {
+  .newswell__lead .newswell__content {
+    padding: 10px 20px;
+  }
+
+  .newswell__sub-list {
+    display: block;
+  }
+}
+
+
+/*
+No-CSSCalc
+
+Support for non-calc browsers.
+
+Remove when IE8 support is no longer required
+*/
+.no-csscalc {
+  .newswell__lead .newswell__content {
+    padding: 10px 2%;
+    width: 46%;
+  }
+}

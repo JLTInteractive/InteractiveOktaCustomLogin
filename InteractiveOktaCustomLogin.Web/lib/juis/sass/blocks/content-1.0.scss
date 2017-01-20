@@ -1,0 +1,815 @@
+// Content c-
+.c-main {
+  background: $pure-white;
+  padding: 15px 20px;
+
+  @media screen and (min-width: $break-doppio) {
+    @include clearfix();
+    padding: 20px 55px;
+  }
+}
+
+.c-main__box,
+.c-block {
+  a:not([class]) {
+    color: $jlt-red;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.c-action {
+  display: block;
+  white-space: nowrap;
+  color: $jlt-red;
+  text-decoration: none;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  font-family: $open-sans-semibold;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.c-action--secondary {
+  color: $jlt-bright-blue-text;
+
+  &::after {
+    content: ">";
+    margin-left: 0.25em;
+    width: 1em;
+    height: 1em;
+    vertical-align: text-top;
+  }
+}
+
+.c-controls {
+  margin-top: -35px;
+}
+
+.c-control {
+  display: inline-block;
+  border: 1px solid $neutral-light-grey;
+  text-decoration: none;
+  padding: 2px 5px;
+  color: $neutral-mid-text-grey;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $jlt-dim-blue;
+    border-color: $jlt-dim-blue;
+    background-color: $pure-white;
+  }
+}
+
+.c-illustration {
+  float: right;
+  max-width: 45vw;
+  margin: 0 0 1em 1em;
+}
+
+.c-illustration-image {
+  max-width: 45vw;
+}
+
+.c-figure {
+  margin: 1em 0;
+}
+
+.c-figure-image {
+  max-width: 100%;
+}
+
+.c-vcard {
+  margin: 1em 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+.c-vcard-region {
+  font-weight: bold;
+}
+
+//forms
+
+.c-form {
+  p {
+    margin-top: 0;
+  }
+
+  label {
+    display: inline-block;
+  }
+ }
+
+.c-form__header {
+  margin-top: 0;
+}
+
+.c-fieldset {
+  margin: 1em 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.c-form--inline {
+  p {
+    display: inline-block;
+    margin-right: 2em;
+  }
+
+  label {
+    display: block;
+    margin-right: 0.5em;
+    font-weight: bold;
+  }
+}
+
+.c-fieldset__submit {
+  margin-top: 0;
+
+  .c-button {
+    margin-bottom: 1em;
+  }
+}
+
+.c-fieldset__submit--compact {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+// form
+
+.j-form__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+
+  li {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.input-group {
+  display: inline-block;
+
+  .form-control {
+    display: inline-block;
+    float: none;
+    width: auto;
+  }
+}
+
+.input-group-addon {
+  display: inline-block;
+  margin-left: -4px;
+  margin-top: -2px;
+  min-width: 38px;
+  min-height: 34px;
+}
+
+.table--scrollable {
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+  }
+}
+
+//breakout box
+
+.c-breakout-box {
+  display: inline-block;
+  width: 40%;
+  margin-right: 2%;
+  vertical-align: top;
+  border: 2px solid $neutral-mid-grey;
+  padding: 15px;
+  background: $neutral-ultra-light-grey;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.c-breakout-box__table {
+  th {
+    text-align: left;
+  }
+}
+
+//tables
+
+.c-main__table-header {
+  margin-bottom: -1em;
+  padding: 0 10px;
+  border: 1px solid $jlt-bluegrey-light;
+  border-bottom: 0;
+  background: $neutral-ultra-light-grey;
+
+  .c-form {
+    margin-bottom: 0;
+  }
+}
+
+.c-main__table {
+  margin: 1em 0;
+  border: 1px solid $jlt-bluegrey-light;
+  //border-collapse: collapse;
+
+  th {
+    text-align: left;
+  }
+
+  thead th {
+    background: $jlt-bluegrey-ultra-light;
+  }
+
+  th,
+  td {
+    padding: 7px 10px;
+    border-top: 1px solid $jlt-bluegrey-light;
+    border-bottom: 1px solid $jlt-bluegrey-light;
+  }
+
+  tr:nth-child(2n) td {
+    background: $neutral-ultra-light-grey;
+  }
+}
+
+.c-main__table--compact {
+  border: 0;
+
+  th,
+  td {
+    padding: 0 10px 4px 0;
+    border: 0;
+  }
+}
+
+.c-main__table--data {
+  font-size: 14px;
+
+  th,
+  td {
+    padding: 3px 7px 4px;
+    border-left: 1px solid $jlt-bluegrey-light;
+    border-right: 1px solid $jlt-bluegrey-light;
+  }
+
+  tr:nth-child(even) {
+    background: $jlt-bluegrey-ultra-light;
+  }
+}
+
+.c-main__cell--currency {
+  text-align: right;
+}
+
+//single article
+
+.c-article {
+  word-wrap: break-word;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  ul {
+    &:not([class]) {
+      max-width: 38rem;
+    }
+  }
+
+  h1,
+  h2 {
+    font-family: $open-sans-light;
+  }
+
+  h2 {
+    color: $jlt-red;
+  }
+
+  ul,
+  ol {
+    padding-left: 0;
+
+    ul,
+    ol {
+      padding-left: 2rem;
+    }
+  }
+
+  ul:not([class]) {
+    list-style: disc;
+
+    &.g-grid__box {
+      list-style: none;
+      max-width: none;
+      padding: 0;
+    }
+  }
+}
+
+.c-article__container {
+  max-width: 43rem;
+}
+
+.c-article__title {
+  max-width: 38rem;
+}
+
+.c-article__standfirst {
+  font-weight: bold;
+}
+
+.c-article__byline {
+  margin-bottom: 3px;
+  font-size: 14px;
+  color: $jlt-red;
+}
+
+.c-article__meta {
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.c-article__media {
+  width: 100%;
+  max-width: 38rem;
+  margin: 1em 0;
+}
+
+.c-article__media-item {
+  width: 100%;
+}
+
+.c-article__media-item--lead {
+  max-width: none;
+}
+
+.c-article__video {
+  position: relative;
+  padding-bottom: 62.5%;
+  padding-top: 25px;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.c-article__pull {
+  max-width: 36rem;
+  margin: 1em 0;
+  padding: 10px 0.5rem;
+  font-size: 20px;
+  font-style: italic;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+
+  @media screen and (min-width: $break-espresso) {
+    padding: 10px 1rem;
+    font-size: 24px;
+  }
+}
+
+.c-attachment__group {
+  background: $neutral-ultra-light-grey;
+
+  a {
+    @include inverted-anchor();
+
+    display: flex;
+    padding: 10px;
+    width: calc(100% - 20px);
+  }
+
+  svg {
+    fill: currentColor;
+  }
+
+  .c-attachment__list,
+  .c-attachment__meta {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.c-attachment__header {
+  padding: 10px;
+  margin: 0;
+  font-size: 20px;
+
+  @media screen and (min-width: $break-espresso) {
+    font-size: 24px;
+  }
+}
+
+.c-attachment__icon {
+  flex-basis: 50px;
+
+  @media screen and (min-width: $break-espresso) {
+    flex-basis: 100px;
+  }
+
+  svg {
+    width: 35px;
+    height: 35px;
+
+    @media screen and (min-width: $break-espresso) {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+.c-attachment__title {
+  font-size: 16px;
+
+  @media screen and (min-width: $break-espresso) {
+    font-size: 18px;
+  }
+}
+
+.c-attachment__modified,
+.c-attachment__type {
+  font-size: 14px;
+}
+
+//buttons
+
+.c-button {
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0.75rem 2rem;
+  border: 0;
+  color: $pure-white;
+  background: $neutral-mid-text-grey;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  transition: background 200ms ease-in-out;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: darken($neutral-mid-text-grey, 10%);
+  }
+}
+
+.c-button--primary {
+  background: $jlt-red;
+  color: $pure-white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: darken($jlt-red, 10%);
+  }
+}
+
+.c-button:disabled,
+.c-button--disabled {
+  background: $neutral-mid-grey;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $neutral-mid-grey;
+  }
+}
+
+// Search form
+
+.c-form--search {
+  display: inline-block;
+  margin: 0 $grid-base 0 0;
+  vertical-align: middle;
+
+  p {
+    display: inline-block;
+    margin: 0;
+  }
+
+  input[type="search"] {
+    vertical-align: middle;
+    padding: 3px 6px;
+    border: 1px solid $jlt-bluegrey-light;
+    font-size: 18px;
+    height: 33px;
+    outline: 0;
+
+    &:focus,
+    &:hover {
+      border-color: $neutral-mid-grey;
+    }
+  }
+
+  input[type="submit"] {
+    vertical-align: middle;
+    margin-left: -1px;
+    border: 1px solid $jlt-bluegrey-light;
+    background: $pure-white;
+    line-height: 1;
+    width: 33px;
+    height: 33px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: $neutral-ultra-light-grey;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    input {
+      border-color: $neutral-mid-grey;
+    }
+  }
+}
+
+.c-label__svg {
+  position: relative;
+  display: inline-block;
+
+  svg {
+    position: absolute;
+    z-index: 1;
+    fill: $neutral-mid-text-grey;
+    stroke: $neutral-mid-text-grey;
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    svg {
+      fill: $jlt-blue;
+      stroke: $jlt-blue;
+    }
+  }
+}
+
+.c-form__button--search {
+  text-indent: -999em;
+}
+
+// Search Results
+
+.c-search__results {
+  list-style: none;
+  max-width: 38rem;
+  margin-bottom: 1em;
+  padding: 0;
+}
+
+.c-search__result {
+  border-bottom: 1px solid $jlt-bluegrey-ultra-light;
+  padding: 0.5em;
+
+  &:first-child {
+    border-top: 1px solid $jlt-bluegrey-ultra-light;
+  }
+
+  &:hover {
+    background: $jlt-bluegrey-ultra-light;
+  }
+
+  dl {
+    display: inline-block;
+    margin-right: 1em;
+    margin-top: 0.5em;
+  }
+
+  dt {
+    font-size: 12px;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+.c-search__title {
+  margin-bottom: 0;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.c-search__meta {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: $jlt-bright-blue-text;
+}
+
+.c-search__summary {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.c-search__details {
+  display: flex;
+  flex-direction: row;
+}
+
+.c-search__profile {
+  flex-basis: 50%;
+}
+
+.c-search__contact {
+  flex-basis: 50%;
+}
+
+.c-search__nav {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+  }
+}
+
+// Tool bar
+
+.c-tool-group {
+  margin-bottom: 1em;
+}
+
+.c-toolbar {
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+  }
+
+  button {
+    min-width: 77px;
+    padding: 5px;
+    border: 1px solid $jlt-bluegrey-light;
+    background: $pure-white;
+    font-size: 12px;
+    transition: background 200ms ease-in-out, border 200ms ease-in-out;
+
+    svg {
+      display: block;
+      margin: 0 auto;
+    }
+
+    path {
+      transition: fill 200ms ease-in-out;
+      fill: $neutral-mid-text-grey;
+    }
+
+    .g-svg__highlight--green,
+    .g-svg__highlight--yellow,
+    .g-svg__highlight--orange {
+      fill: $jlt-bluegrey-light;
+    }
+
+    &[aria-selected="true"],
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: $neutral-mid-grey;
+      background: $neutral-ultra-light-grey;
+
+      path {
+        fill: $jlt-blue;
+      }
+
+      .g-svg__highlight--green {
+        fill: $jlt-bright-green;
+      }
+
+      .g-svg__highlight--yellow {
+        fill: $jlt-bright-yellow;
+      }
+
+      .g-svg__highlight--orange {
+        fill: $jlt-bright-orange;
+      }
+    }
+
+    &[aria-disabled="true"] {
+      cursor: default;
+      border-color: $neutral-highlight-grey;
+      color: $neutral-mid-grey;
+      background: $pure-white;
+
+      path {
+        fill: $jlt-bluegrey-light;
+      }
+
+      .g-svg__highlight--green,
+      .g-svg__highlight--yellow,
+      .g-svg__highlight--orange {
+        fill: $neutral-highlight-grey;
+      }
+    }
+  }
+}
+
+/*
+No-flex
+
+Support for non-flexbox browsers. Remove this once IE9 support is no longer required.
+
+Minimum width fixed to 900px to make things easier
+*/
+
+//.flexbox {
+.no-flexbox {
+  .c-attachment__icon {
+    display: inline-block;
+    width: 100px;
+  }
+
+  .c-attachment__meta {
+    display: inline-block;
+  }
+}
+
+/*
+No-SVG
+
+Support for non-svg browsers. Essentially means PNG replacements.
+
+Remove when IE8 support is no longer required
+*/
+.no-svg {
+  .c-attachment a {
+    display: block;
+  }
+
+  .c-attachment__icon {
+    height: 70px;
+    background: url("../images/icon_download.png") no-repeat;
+  }
+}
+
+/*
+No-Mediaqueries
+
+Support for non-media query browsers.
+
+Remove when IE8 support is no longer required
+*/
+.no-mediaqueries {
+  .c-main__box {
+    @include clearfix();
+    padding: 20px 55px;
+  }
+
+  .c-article__subhead {
+    font-size: 24px;
+  }
+
+  .c-article__pull {
+    padding: 10px 16px;
+    font-size: 24px;
+  }
+
+  .c-attachment__header {
+    font-size: 24px;
+  }
+}
+
+/*
+No-CSSCalc
+
+Support for non-calc browsers.
+
+Remove when IE8 support is no longer required
+*/
+.no-csscalc {
+  .c-main__box {
+    padding: 20px 3%;
+  }
+}

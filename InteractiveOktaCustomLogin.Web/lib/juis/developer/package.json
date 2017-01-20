@@ -1,0 +1,19 @@
+{
+  "name": "jlti",
+  "version": "0.1.0",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-grunticon": "^2.2.3",
+    "grunt-postcss": "^0.8.0",
+    "grunt-svgmin": "^3.2.0",
+    "grunt-svgstore": "^1.0.0",
+    "imgcompress": "^0.1.0"
+  }
+}

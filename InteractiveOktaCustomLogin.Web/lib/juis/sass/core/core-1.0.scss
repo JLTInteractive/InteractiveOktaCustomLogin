@@ -1,0 +1,46 @@
+/*
+Global .g-
+*/
+
+//globals .g-
+.g-container-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.g-nav {
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.g-button {
+  margin-left: 5px;
+  padding: 5px 15px;
+  border: 1px solid;
+}
+
+/*
+No-SVG
+
+Support for non-svg browsers. Essentially means PNG replacements.
+
+Remove when IE8 support is no longer required
+*/
+.no-svg {
+  .g-button__search {
+    background-image: url("../images/icon_search.png");
+    background-position: center;
+  }
+}

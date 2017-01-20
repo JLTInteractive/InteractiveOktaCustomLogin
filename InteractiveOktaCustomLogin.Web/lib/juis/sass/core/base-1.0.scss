@@ -1,0 +1,69 @@
+// Base
+
+// Border-box for all because Chris Coyier and Paul Irish said so.
+// See https://css-tricks.com/international-box-sizing-awareness-day/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+//Sticky footer via https://css-tricks.com/couple-takes-sticky-footer/
+//              and https://css-tricks.com/couple-takes-sticky-footer/#comment-1601783
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;//counter site.css
+  font-family: $open-sans-regular;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+header,
+footer {
+  flex-shrink: 0;
+}
+
+label {
+  display: block;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/*
+No-flex
+
+Support for non-flexbox browsers. Remove this once IE9 support is no longer required.
+
+Minimum width fixed to 900px to make things easier
+*/
+
+//.flexbox {
+.no-flexbox {
+  body {
+    min-width: $break-cafe-creme;
+    background: $neutral-highlight-grey;
+  }
+}
+
+/*
+Flexbox tweener
+
+Support for IE10's half-half flexbox implementation
+
+IE10 also flags .no-flexbox which means this essentially acts as an override where necessary.
+*/
+.flexboxtweener {
+  body {
+    // Given the flexbox sticky footer works for IE10, the background needs to stay clear.
+    background: none;
+  }
+
+}

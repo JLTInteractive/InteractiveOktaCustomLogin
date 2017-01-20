@@ -1,0 +1,81 @@
+.p-slider-nav__activator {
+  position: absolute;
+  display: inline-block;
+  border: 1px solid;
+  padding: 0.75em 0.5em;
+  left: 0.5em;
+  top: 0.25em;
+  user-select: none;
+
+  &:hover {
+    background: $pure-white;
+  }
+
+  .p-slider-box--active & .lines {
+    &::before,
+    &::after {
+      transform-origin: 50% 50%;
+      top: 0;
+    }
+
+    &::before {
+      transform: rotate3d(0, 0, 1, -40deg);
+    }
+
+    &::after {
+      transform: rotate3d(0, 0, 1, 40deg);
+    }
+  }
+
+  .lines {
+    position: relative;
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+
+    &::before {
+      @include line(1.25rem, $pure-black);
+      top: 0;
+      transform: rotate3d(0, 0, 1, 40deg);
+    }
+
+    &::after {
+      @include line(1.25rem, $pure-black);
+      top: 0;
+      transform: rotate3d(0, 0, 1, -40deg);
+    }
+  }
+}
+
+.p-slider-nav--scripted {
+  z-index: 100;
+  position: absolute;
+  max-width: 16em;
+  transition: transform 300ms ease-in-out;
+  transform: translateX(-300px);
+  background: rgba(255, 255, 255, 0.95);
+  border-top: 1px solid $neutral-light-grey;
+  border-right: 1px solid $neutral-highlight-grey;
+  border-left: 1px solid $neutral-highlight-grey;
+
+  @media screen and (min-width: $break-cafe-creme) {
+    z-index: auto;
+    position: static;
+    overflow: none;
+    transform: none;
+    border: 0;
+  }
+}
+
+.p-slider-nav--active {
+  transform: translateX(0);
+}
+
+// Prevent transition from showing on script load
+.p-slider-nav--script-init {
+  opacity: 0;
+
+  @media screen and (min-width: $break-cafe-creme) {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,45 @@
+$tab-colour: #eef;
+$tab-colour-selected: #000;
+$tab-background-colour-selected: #fff;
+
+.g-tab__tab-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.g-tab__tab {
+  display: inline-block;
+
+  a {
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid;
+    border-bottom: 0;
+    background: $tab-colour;
+    text-decoration: none;
+    touch-action: manipulation;
+
+    &:hover,
+    &:focus {
+      background: $tab-colour-selected;
+      border-color: $tab-colour-selected;
+      color: $tab-background-colour-selected;
+    }
+  }
+
+  a:active,
+  &[aria-selected="true"] a {
+    background: $tab-background-colour-selected;
+    border-color: $tab-colour-selected;
+    color: $tab-colour-selected;
+  }
+}
+
+.g-tab__tab-panel {
+  border: 2px solid;
+
+  &[aria-hidden="true"] {
+    display: none;
+  }
+}

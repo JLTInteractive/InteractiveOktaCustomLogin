@@ -1,0 +1,185 @@
+mark {
+  font-weight: bold;
+  background-color: lighten($jlt-bright-blue, 30%);
+}
+
+.c-form {
+  fieldset {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+
+  legend {
+    font-size: 20px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  label {
+    display: block;
+
+    * {
+      vertical-align: middle;
+    }
+  }
+}
+
+.c-form__field-box {
+  margin-bottom: 1em;
+}
+
+.c-form__hint {
+  display: block;
+  color: $jlt-bright-blue-text;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 2px solid $neutral-mid-text-grey;
+  padding: 4px;
+  line-height: 1.25;
+
+  &:disabled {
+    background-color: $neutral-light-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $jlt-bright-yellow;
+  }
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+select {
+  border: 2px solid $neutral-mid-text-grey;
+  padding: 4px;
+  line-height: 1.25;
+  background-color: $pure-white;  
+
+  &:disabled {
+    background-color: $neutral-light-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $jlt-bright-yellow;
+  }
+}
+
+// Derived from Lea Verou
+// http://lea.verou.me/2011/03/custom-select-drop-downs-with-css3/
+.c-form__select-box {
+  display: inline-block;
+  position: relative;
+  
+  select {
+    display: inline-block;
+    padding: 4px 28px 4px 4px;
+    border-radius: 0;
+    font: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    // IE selector for drop button
+    // https://msdn.microsoft.com/en-us/library/windows/apps/hh465742.aspx
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "\25bc";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 60%;
+    line-height: 30px;
+    border: 2px solid $neutral-mid-text-grey;
+    padding: 0 7px;
+    background: $neutral-mid-text-grey;
+    color: $pure-white;
+    pointer-events: none;
+  }
+}
+
+.c-form__field-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.c-form__field-box--error {
+  input,
+  input:focus,
+  select,
+  select:focus,
+  textarea,
+  textarea:focus,
+  .c-form__select-box::after {
+    border-color: $jlt-red;
+  }
+}
+
+.c-form__sub-field-box {
+  &[aria-hidden="true"] {
+    display: none;
+  }
+}
+
+.c-form__label--error {
+  color: $jlt-red;
+}
+
+.c-form__block-label {
+  border: 1px solid $neutral-light-grey;
+  background: $neutral-highlight-grey;
+  padding: 0.75em 1em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  transition: border ease-in-out 200ms, background ease-in-out 200ms;
+
+  &:hover {
+    border-color: $neutral-mid-text-grey;
+  }
+}
+
+.c-form__block-label--focussed {
+  outline: 2px solid $jlt-bright-yellow;
+  border-color: $neutral-highlight-grey;
+
+  *:focus {
+    outline: none;
+  }
+}
+
+.c-form__block-label--checked {
+  border-color: $neutral-mid-text-grey;
+  background-color: $neutral-ultra-light-grey;
+}
+
+.c-form__block-label--error {
+  border-color: $jlt-red;
+}
+
+.c-form__block-label--disabled {
+  border-color: $neutral-highlight-grey;
+  color: $neutral-mid-text-grey;
+
+  &:hover {
+    border-color: $neutral-highlight-grey;
+  }
+}
+
+.c-form__field-box--inline {
+  .c-form__block-label {
+    display: inline-block;
+    margin-right: 0.5em;
+  }
+}

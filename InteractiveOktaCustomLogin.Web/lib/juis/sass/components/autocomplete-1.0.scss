@@ -1,0 +1,93 @@
+.g-ac {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 3px;
+
+  &:focus {
+    outline: 0;
+    border-color: #09c;
+    box-shadow: 0 0 3px #09c;
+  }
+}
+
+.g-ac__container {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.g-ac__source {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+
+  &[aria-hidden="true"] {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+    padding: 5px;
+    background: #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    white-space: nowrap;
+
+    &:first-child {
+      border-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+    
+    &:hover {
+      background: #eee;
+      border-color: #ccc;
+    }
+    
+    &:focus,
+    &[aria-selected="true"] {
+      background: #dff;
+      border-color: #ccc;
+    }
+  }
+  
+  [aria-hidden="true"] {
+    display: none;
+  }
+
+  [aria-expanded="false"] {
+    display: none;
+  }
+}
+
+.g-form {
+  input {
+    line-height: 1;
+  }
+
+  select {
+    appearance: none;
+  }
+}
+
+.g-form__activator {
+  line-height: 1;
+  padding: 3px;
+  border: 1px solid #ccc;
+}
+
+mark {
+  font-weight: bold;
+  background-color: #ff0;
+}
+
+.g-rf__target {
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin-top: -1px;
+  box-shadow: 0 1px 3px #999;
+}

@@ -1,0 +1,271 @@
+// Grid
+
+.g-grid__box {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 -10px;
+  padding: 0;
+}
+
+.g-grid__liner {
+  margin: 0 10px;
+//  display: flex;
+}
+
+.g-grid__two {
+  > .g-grid__item {
+    flex-basis: 50%;
+  }
+
+  > .g-grid__item--full {
+    flex-basis: 100%;
+  }
+}
+
+.g-grid__three {
+  //start as a two column grid
+  > .g-grid__item {
+    flex-basis: 50%;
+  }
+
+  > .g-grid__item--double,
+  > .g-grid__item--full {
+    flex-basis: 100%;
+  }
+
+  //expand to three column grid
+  @media screen and (min-width: $break-espresso) {
+    > .g-grid__item {
+      flex-basis: 33.3333%;
+    }
+
+    > .g-grid__item--double {
+      flex-basis: 66.6666%;
+    }
+
+    > .g-grid__item--full {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.g-grid__four {
+  //start as a two column grid
+  > .g-grid__item {
+    flex-basis: 50%;
+  }
+
+  > .g-grid__item--double,
+  > .g-grid__item--triple,
+  > .g-grid__item--full,
+  > .g-grid__item--last {
+    flex-basis: 100%;
+  }
+
+  //expand to three column grid
+  @media screen and (min-width: $break-espresso) {
+    > .g-grid__item {
+      flex-basis: 33.3333%;
+    }
+
+    > .g-grid__item--double {
+      flex-basis: 66.6666%;
+    }
+
+    > .g-grid__item--triple,
+    > .g-grid__item--full,
+    > .g-grid__item--last {
+      flex-basis: 100%;
+    }
+  }
+
+  @media screen and (min-width: $break-cafe-creme) {
+    > .g-grid__item,
+    > .g-grid__item--last {
+      flex-basis: 25%;
+    }
+
+    > .g-grid__item--double {
+      flex-basis: 50%;
+    }
+
+    > .g-grid__item--triple {
+      flex-basis: 75%;
+    }
+
+    > .g-grid__item--full {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.g-grid__eight {
+  //start as a two column grid
+  > .g-grid__item,
+  > .g-grid__item--double {
+    flex-basis: 50%;
+  }
+
+  > .g-grid__item--triple,
+  > .g-grid__item--quad,
+  > .g-grid__item--quint,
+  > .g-grid__item--hex,
+  > .g-grid__item--full,
+  > .g-grid__item--last {
+    flex-basis: 100%;
+  }
+
+  //expand to four column grid
+  @media screen and (min-width: $break-espresso) {
+    > .g-grid__item {
+      flex-basis: 25%;
+    }
+
+    > .g-grid__item--double {
+      flex-basis: 50%;
+    }
+
+    > .g-grid__item--triple,
+    > .g-grid__item--quad,
+    > .g-grid__item--quint,
+    > .g-grid__item--hex,
+    > .g-grid__item--full,
+    > .g-grid__item--last {
+      flex-basis: 100%;
+    }
+  }
+
+  @media screen and (min-width: $break-cafe-creme) {
+    > .g-grid__item,
+    > .g-grid__item--last {
+      flex-basis: 12.5%;
+    }
+
+    > .g-grid__item--double {
+      flex-basis: 25%;
+    }
+
+    > .g-grid__item--triple {
+      flex-basis: 37.5%;
+    }
+
+    > .g-grid__item--quad {
+      flex-basis: 50%;
+    }
+
+    > .g-grid__item--quint {
+      flex-basis: 62.5%;
+    }
+
+    > .g-grid__item--hex {
+      flex-basis: 75%;
+    }
+
+    > .g-grid__item--full {
+      flex-basis: 100%;
+    }
+  }
+}
+
+/*
+No-flex
+Support for non-flexbox browsers. Remove this once IE10 support is no longer required.
+Minimum width fixed to 900px to make things easier
+*/
+.no-flexbox {
+  .g-grid__box {
+    @include clearfix();
+    display: block;
+    list-style: none;
+    margin: 0 -10px;
+    padding: 0;
+  }
+
+  .g-grid__item {
+    float: left;
+  }
+
+  //force new row for non-flex elements
+  .g-grid__item--first-in-row {
+    clear: left;
+  }
+
+  .g-grid__item--full {
+    clear: both;
+  }
+
+  .g-grid__two {
+    > .g-grid__item {
+      width: 50%;
+    }
+
+    > .g-grid__item--full {
+      width: 100%;
+    }
+  }
+
+  .g-grid__three {
+    > .g-grid__item {
+      width: 33.3333%;
+    }
+
+    > .g-grid__item--double {
+      width: 66.6666%;
+    }
+
+    > .g-grid__item--full {
+      width: 100%;
+    }
+  }
+
+  .g-grid__four {
+    > .g-grid__item,
+    > .g-grid__item--last {
+      width: 25%;
+    }
+
+    > .g-grid__item--double {
+      width: 50%;
+    }
+
+    > .g-grid__item--triple {
+      width: 75%;
+    }
+
+    > .g-grid__item--full {
+      width: 100%;
+    }
+  }
+
+  .g-grid__eight {
+    > .g-grid__item,
+    > .g-grid__item--last {
+      width: 12.5%;
+    }
+
+    > .g-grid__item--double {
+      width: 25%;
+    }
+
+    > .g-grid__item--triple {
+      width: 37.5%;
+    }
+
+    > .g-grid__item--quad {
+      width: 50%;
+    }
+
+    > .g-grid__item--quint {
+      width: 62.5%;
+    }
+
+    > .g-grid__item--hex {
+      width: 75%;
+    }
+
+    > .g-grid__item--full {
+      width: 100%;
+    }
+  }
+}

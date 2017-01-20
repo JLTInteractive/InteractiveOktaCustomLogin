@@ -1,0 +1,52 @@
+// Mixins
+
+//exposes active state for active page highlights.
+@mixin header-nav-main-active-state() {
+  background: $neutral-highlight-grey;
+  text-decoration: none;
+  //todo: menu transition
+}
+
+//clearfix
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//inverted anchor. Default of no underline and show underline on hover
+@mixin inverted-anchor() {
+  text-decoration: none;
+
+  &:active,
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+//exposes active state for active page highlights.
+@mixin page-nav-active-state() {
+  //border-top-color: $jlt-red;
+  background-color: $neutral-highlight-grey;
+  color: $jlt-red;
+  text-decoration: none;
+  //todo: transition
+}
+
+//default styles for animation element line
+@mixin line($size, $colour) {
+  position: absolute;
+  content: "";
+  left: 0;
+  display: inline-block;
+  width: $size;
+  height: $size / 5;
+  background: $colour;
+  border-radius: $size / 10;
+  transition: 300ms;
+  transform-origin: $size / 10 center;
+}

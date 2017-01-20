@@ -1,0 +1,61 @@
+// Slider nav
+//
+// hides overflow menu items in a slider
+
+.slider-nav {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+
+  ul {
+    overflow-x: hidden;
+  }
+
+  li {
+    display: table-cell;
+    border-right: 3px solid $jlt-blue;
+  }
+}
+
+.slider-nav__scroll-box {
+  overflow: hidden;
+}
+
+.slider-nav__scroll-button {
+  display: none;
+  position: absolute;
+  top: 4px;
+  width: 18px;
+  height: 51px;
+  border: 2px solid $jlt-bluegrey-light;
+  background: $jlt-blue;
+  color: $jlt-bluegrey-light;
+  font-size: 14px;
+  padding: 0;
+
+  @media screen and (min-width: $break-espresso) {
+    width: 51px;
+    height: 51px;
+    font-size: 34px;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    border-color: $jlt-bluegrey-ultra-light;
+    background: $jlt-bluegrey-ultra-light;
+    color: $jlt-blue;
+  }
+}
+
+.slider-nav__scroll-button--active {
+  display: block;
+}
+
+.slider-nav__scroll-button--left {
+  left: 2px;
+}
+
+.slider-nav__scroll-button--right {
+  right: 2px;
+}

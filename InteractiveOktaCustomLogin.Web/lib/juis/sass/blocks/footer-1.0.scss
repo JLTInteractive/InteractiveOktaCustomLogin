@@ -1,0 +1,61 @@
+// Footer .f-
+
+.f-box {
+  padding: 20px;
+  background: $neutral-highlight-grey;
+  color: $neutral-dark-grey;
+  font-size: 16px;
+
+  @media screen and (min-width: $break-doppio) {
+    padding: 40px 55px;
+  }
+
+  p {
+    max-width: 38rem;
+  }
+}
+
+.f-title {
+  margin-top: 0;
+  color: $jlt-blue;
+  font-size: 22px;
+  font-family: $open-sans-light;
+}
+
+.f-nav-main {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: $jlt-blue;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $jlt-blue;
+      text-decoration: underline;
+      //todo: transition
+    }
+  }
+}
+
+/*
+No-CSSCalc
+
+Support for non-calc browsers.
+
+Remove when IE8 support is no longer required
+*/
+.no-csscalc {
+  .f-box {
+    padding: 20px 3%;
+  }
+}

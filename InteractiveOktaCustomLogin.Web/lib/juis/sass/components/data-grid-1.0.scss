@@ -1,0 +1,49 @@
+// Data Grid
+
+.c-data-grid {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+
+  th,
+  td {
+    padding: 6px 10px;
+    text-align: left;
+  }
+
+  input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  thead {
+    th {
+      border-bottom: 1px solid $jlt-dark-grey;
+      font-size: 12px;
+    }
+  }
+
+  tr:nth-child(2n+1) td {
+    background: $neutral-ultra-light-grey;
+  }
+
+  tr[aria-selected="true"] {
+    td {
+      background: $neutral-highlight-grey;
+    }
+
+    &:nth-child(2n+1) td {
+      background: darken($neutral-highlight-grey, 5%);
+    }
+  }
+
+  tr:hover {
+    td {
+      background: $jlt-bluegrey-ultra-light;
+    }
+
+    &:nth-child(2n+1) td {
+      background: darken($jlt-bluegrey-ultra-light, 5%);
+    }
+  }
+}

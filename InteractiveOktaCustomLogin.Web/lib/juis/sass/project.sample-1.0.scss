@@ -1,0 +1,22 @@
+// JUIS
+@import "path/to/juis/all";
+
+/*
+Project styles
+
+Anything not bound for the template goes in here
+*/
+
+/*
+Section highlights
+*/
+.h-section-name #h-nav-section-name {
+  @include header-nav-main-active-state();
+}
+
+/*
+
+*/
+.p-page-name #p-nav-page-name {
+  @include page-nav-active-state();
+}
